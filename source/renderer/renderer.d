@@ -19,6 +19,10 @@ struct Color {
 			cast(ubyte)clamp(color.y * 255, 0, 255),
 			cast(ubyte)clamp(color.z * 255, 0, 255));
 	}
+
+	string toString() {
+		return "Color(" ~ r.to!string ~ ", " ~ g.to!string ~ ", " ~ b.to!string ~ ")";
+	}
 }
 
 class Renderer
@@ -37,6 +41,19 @@ class Renderer
 		this.height = height;
 
 		aspectRatio = width / cast(float)height;
+	}
+
+	Color[] renderToRgb888NoPathTrace() {
+		Color[] bytePixels = new Color[height * width];
+		
+		foreach(y; 0 .. height) {
+			foreach(x; 0 .. width) {
+				vec3f pixel  = renderPixelNoPathTrace(x, y);
+				bytePixels[y * width + x] = Color.fromVector(pixel);
+			}
+		}
+		
+		return bytePixels;
 	}
 
 	Color[] renderToRgb888(int iterations) {
@@ -76,6 +93,20 @@ class Renderer
 		return rawPixels;
 	}
 
+	vec3f renderPixelNoPathTrace(int x, int y) {
+		vec3f origin = eyePosition;
+		vec3f direction = eyeRotation * vec3f((x / cast(float)width * 2f - 1f) * aspectRatio, y / cast(float)height * -2f + 1f, -1f).normalized;
+
+		vec3f hitPos, hitNormal;
+		SceneObject hitObject;
+		
+		if(raymarch(origin, direction, hitPos, hitNormal, hitObject)) {
+			return hitNormal;
+		}
+
+		return skyColor;
+	}
+
 	vec3f renderPixel(int x, int y) {
 		vec3f origin = eyePosition;
 		vec3f direction = eyeRotation * vec3f((x / cast(float)width * 2f - 1f) * aspectRatio, y / cast(float)height * -2f + 1f, -1f).normalized;
@@ -86,9 +117,11 @@ class Renderer
 	enum skyColor = vec3f(0.1f, 0.5f, 0.9f);
 	enum directionLightDir = vec3f(0, -0.5f, -1f).normalized;
 
-	Tuple!(vec3f, vec3f) pathTrace(vec3f origin, vec3f direction, int depth = 0, vec3f accumColor = vec3f(0, 0, 0), vec3f maskColor = vec3f(1, 1, 1)) {
+	enum nextEventEstimation = true;
+
+	Tuple!(vec3f, vec3f, SceneObject) pathTrace(vec3f origin, vec3f direction, int depth = 0, vec3f accumColor = vec3f(0, 0, 0), vec3f maskColor = vec3f(1, 1, 1)) {
 		if(depth > 3)
-			return tuple(accumColor, maskColor);
+			return tuple(accumColor, maskColor, cast(SceneObject)null);
 
 		vec3f hitPos, hitNormal;
 		SceneObject hitObject;
@@ -97,22 +130,59 @@ class Renderer
 			maskColor *= hitObject.color;
 			accumColor += maskColor * hitObject.emission;
 
-			vec3f dir = getRandomHemisphereDir(hitNormal);
+			if(hitNormal.x.isNaN, hitNormal.y.isNaN, hitNormal.z.isNaN)
+				return tuple(accumColor, maskColor, hitObject);
 
+			if(nextEventEstimation) {
+				int count = 1;
+				vec3f totalAccum = accumColor, totalMask = maskColor;
+
+				vec3f hemisphereDir = getRandomHemisphereDir(hitNormal);
+
+				foreach(obj; scene.objects) {
+					if(obj.emission < 0.2f)
+						continue;
+
+					count++;
+
+					vec3f dir = ((obj.position - hitPos).normalized * 4 + hemisphereDir).normalized;
+					totalMask += dir.dot(hitNormal);
+
+
+					auto result = pathTrace(hitPos + dir * epsilon * 5, dir, depth + 1, accumColor, maskColor);
+					if(result[2] == obj) {
+						totalAccum += result[0];
+						totalMask += result[1];
+					}
+				}
+
+				vec3f dir = hemisphereDir;
+				totalMask += dir.dot(hitNormal);
+
+				auto result = pathTrace(hitPos + dir * epsilon * 5, dir, depth + 1, accumColor, maskColor);
+				totalAccum += result[0];
+				totalMask += result[1];
+
+				return tuple(totalAccum / count, totalMask / count, hitObject);
+			}
+
+			/*
+			vec3f dir = getRandomHemisphereDir(hitNormal);		
 			maskColor *= dir.dot(hitNormal);
 
 			return pathTrace(hitPos + dir * epsilon * 5, dir, depth + 1, accumColor, maskColor);
+			*/
 		}
 		else {
-			maskColor = maskColor * skyColor;
-			accumColor += maskColor * 2f;
+			//maskColor = maskColor * skyColor;
+			//accumColor += maskColor * 2f;
 		}
 
-		return tuple(accumColor, maskColor);
+		return tuple(accumColor, maskColor, cast(SceneObject)null);
 	}
 
 	vec3f getRandomHemisphereDir(vec3f normal) {
-		vec3f dir = vec3f(uniform(-1f, 1f), uniform(-1f, 1f), uniform(-1f, 1f));
+		vec3f dir = vec3f(uniform(-1f, 1f), uniform(-1f, 1f), uniform(-1f, 1f)).normalized;
 
 		if(dir.dot(normal) < 0)
 			return -dir;
@@ -136,7 +206,7 @@ class Renderer
 	}
 
 	enum maxIterations = 120;
-	enum epsilon = 0.0001f;
+	enum epsilon = 0.00001f;
 
 	bool raymarch(vec3f origin, vec3f direction, out vec3f hitPos, out vec3f hitNormal, out SceneObject hitObject) {
 		int i = 0;
@@ -180,7 +250,7 @@ class Renderer
 	}
 
 	vec3f computeNormal(vec3f point) {
-		float d = 0.01f;
+		float d = 0.001f;
 		SceneObject obj;
 
 		return vec3f(

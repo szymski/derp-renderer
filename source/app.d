@@ -9,9 +9,9 @@ SDL_Renderer* sdlRenderer;
 
 bool running = true;
 
-enum width = 256;
-enum height = 256;
-enum zoom = 2;
+enum width = 128;
+enum height = 128;
+enum zoom = 4;
 
 Renderer myRenderer;
 Color[width * height] pixels;
@@ -25,43 +25,89 @@ static if(progressive) {
 void main()
 {
 	Scene scene = new Scene();
-	scene.objects ~= new Plane(vec3f(0, -3f, 0), vec3f(0, 1f, 0));
-	scene.objects ~= new Plane(vec3f(0, 0, -6f), vec3f(0.5f, 0f, 1f).normalized);
+//	scene.objects ~= new Plane(vec3f(0, -3f, 0), vec3f(0, 1f, 0));
+//	scene.objects ~= new Plane(vec3f(0, 0, -6f), vec3f(0.5f, 0f, 1f).normalized);
 	//scene.objects ~= new Plane(vec3f(0, 2f, 0), vec3f(0, -1f, 0));
 
-	Box box = new Box(vec3f(-1.8f, -3f + 0.5f, -2f), vec3f(1f, 1f, 1f));
-	box.color = vec3f(0.8, 0.2f, 0.9f);
-	scene.objects ~= box;
+//	Box box = new Box(vec3f(-1.8f, -3f + 0.5f, -2f), vec3f(1f, 1f, 1f));
+//	box.color = vec3f(0.8, 0.2f, 0.9f);
+//	scene.objects ~= box;
+//
+//	Sphere sphere = new Sphere(vec3f(0, 0, -3f), 3f);
+//	sphere.color = vec3f(0.3, 1f, 0.1f);
+//	scene.objects ~= sphere;
+//
+//	sphere = new Sphere(vec3f(-1f, -1f, -2f), 2f);
+//	sphere.color = vec3f(1f, 0.5f, 0.2f);
+//	scene.objects ~= sphere;
+//
+//	Sphere lightSphere = new Sphere(vec3f(-10f, 12f, 5f), 10f);
+//	lightSphere.color = vec3f(1f, 0.9f, 0.8f);
+//	lightSphere.emission = 0f;
+//	scene.objects ~= lightSphere;
+//
+//	lightSphere = new Sphere(vec3f(2.8f, -3f + 2.0f, -4f), 0.8f);
+//	lightSphere.color = vec3f(0.5f, 0.8f, 1f);
+//	lightSphere.emission = 6f;
+//	scene.objects ~= lightSphere;
+//
+//	lightSphere = new Sphere(vec3f(0.5f, -3f + 2.0f, -1.5f), 0.9f);
+//	lightSphere.color = vec3f(1f, 0.8f, 0.5f);
+//	lightSphere.emission = 6f;
+//	scene.objects ~= lightSphere;
 
-	Sphere sphere = new Sphere(vec3f(0, 0, -3f), 3f);
-	sphere.color = vec3f(0.3, 1f, 0.1f);
-	scene.objects ~= sphere;
+	{
+		Plane plane = new Plane(vec3f(0, -3f, 0), vec3f(0, 1f, 0));
+		scene.objects ~= plane;
+	}
 
-	sphere = new Sphere(vec3f(-1f, -1f, -2f), 2f);
-	sphere.color = vec3f(1f, 0.5f, 0.2f);
-	scene.objects ~= sphere;
+	{
+		Plane plane = new Plane(vec3f(0, 3f, 0), vec3f(0, -1f, 0));
+		scene.objects ~= plane;
+	}
 
-	Sphere lightSphere = new Sphere(vec3f(-10f, 12f, 5f), 10f);
-	lightSphere.color = vec3f(1f, 0.9f, 0.8f);
-	lightSphere.emission = 0f;
-	scene.objects ~= lightSphere;
+	{
+		Plane plane = new Plane(vec3f(0, 0, -3f), vec3f(0, 0, 1f));
+		scene.objects ~= plane;
+	}
 
-	lightSphere = new Sphere(vec3f(2.8f, -3f + 2.0f, -4f), 0.8f);
-	lightSphere.color = vec3f(0.5f, 0.8f, 1f);
-	lightSphere.emission = 6f;
-	scene.objects ~= lightSphere;
+	{
+		Plane plane = new Plane(vec3f(-3f, 0, 0), vec3f(1f, 0, 0));
+		plane.color = vec3f(1f, 0.2f, 0.2f);
+		scene.objects ~= plane;
+	}
 
-	lightSphere = new Sphere(vec3f(0.5f, -3f + 2.0f, -1.5f), 0.9f);
-	lightSphere.color = vec3f(1f, 0.8f, 0.5f);
-	lightSphere.emission = 6f;
-	scene.objects ~= lightSphere;
+	{
+		Plane plane = new Plane(vec3f(3f, 0, 0), vec3f(-1f, 0, 0));
+		plane.color = vec3f(0.2f, 1f, 0.2f);
+		scene.objects ~= plane;
+	}
+
+	{
+		Sphere sphere = new Sphere(vec3f(-1f, -2f, -1.5f), 1f);
+
+		scene.objects ~= sphere;
+	}
+
+	{
+		Sphere sphere = new Sphere(vec3f(1f, -3f + 1.2f, 0f), 1.2f);
+		scene.objects ~= sphere;
+	}
+
+	{
+		Box box = new Box(vec3f(0, 3f, 0), vec3f(1f, 0.01f, 1f));
+		box.color = vec3f(1f, 0.95f, 0.9f);
+		box.emission = 5f;
+		scene.objects ~= box;
+	}
 
 	myRenderer = new Renderer(scene, width, height);
-	myRenderer.eyePosition = vec3f(0, 0, 2);
+	myRenderer.eyePosition = vec3f(0, 0f, 4.5f);
 	//myRenderer.eyeRotation = quatf.fromEulerAngles(0, -PI * 0.5f, 0) * quatf.fromEulerAngles(0.8f, 0, 0);
 
 	static if(!progressive) {
-		pixels = myRenderer.renderToRgb888(10);
+//		pixels = myRenderer.renderToRgb888(10);
+		pixels = myRenderer.renderToRgb888NoPathTrace();
 	}
 
 	static if(progressive) {
@@ -114,7 +160,8 @@ private void enterLoop() {
 
 			foreach(y; 0 .. height) {
 				foreach(x; 0 .. width) {
-					rawPixels[y * width + x] += newRawPixels[y * width + x] * 0.005f;
+					rawPixels[y * width + x] += newRawPixels[y * width + x] * 0.001f;
+
 					pixels[y * width + x] = Color.fromVector(rawPixels[y * width + x]);
 				}
 			}

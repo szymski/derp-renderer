@@ -13,7 +13,7 @@ class Sphere : SceneObject
 	}
 
 	override float getDistance(vec3f origin) {
-		return (origin - position).length - radius;
+		return origin.length - radius;
 	}
 }
 

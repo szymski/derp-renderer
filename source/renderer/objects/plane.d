@@ -15,8 +15,7 @@ class Plane : SceneObject
 	
 	override float getDistance(vec3f origin) {
 		vec3f fromPointToOrigin = origin - point;
-		float dist = (fromPointToOrigin.dot(normal) / normal.dot(normal));
-
+		float dist = abs(fromPointToOrigin.dot(normal) / normal.dot(normal));
 		return dist;
 	}
 }
