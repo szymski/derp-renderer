@@ -6,5 +6,6 @@
 	"dependencies": {
 		"derelict-sdl2": "~>2.0.0",
 		"derelict-gl3": "~>1.0.18",
+		"gfm:math": "~>6.2.7"
 	}
 }

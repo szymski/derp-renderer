@@ -1,7 +1,8 @@
        |import std.stdio;
        |
        |import std.stdio, std.datetime, std.file, std.string, core.thread, std.experimental.logger, derelict.sdl2.sdl, derelict.opengl3.gl;
-       |import renderer.renderer;
+       |import gfm.math.vector;
+       |import renderer.renderer, renderer.scene, renderer.objects.sphere;
        |
        |SDL_Window* window;
        |SDL_Renderer* sdlRenderer;
@@ -10,13 +11,17 @@
        |
        |enum width = 128;
        |enum height = 128;
+       |enum zoom = 3;
        |
        |Renderer myRenderer;
        |Color[] pixels;
        |
        |void main()
        |{
-      1|        myRenderer = new Renderer(width, height);
+      1|        Scene scene = new Scene();
+      1|        scene.objects ~= new Sphere(vec3f(0, 0, -5f), 3f);
+       |
+      1|        myRenderer = new Renderer(scene, width, height);
       1|        pixels = myRenderer.render();
        |
       1|        start();
@@ -53,58 +58,58 @@
        |private void enterLoop() {
       2|        log("Entering main loop");
        |        
-     67|        while(running) {
-     66|                updateEvents();
-     66|                render();
-     66|                limitFps();
+    483|        while(running) {
+    482|                updateEvents();
+    482|                render();
+    482|                limitFps();
        |        }
        |}
        |
        |private void updateEvents() {
-     66|        SDL_Event event;
+    482|        SDL_Event event;
        |        
-    116|        while(SDL_PollEvent(&event)) {
-     50|                switch(event.type) {
+    571|        while(SDL_PollEvent(&event)) {
+     89|                switch(event.type) {
       1|                        case SDL_QUIT:
       1|                                running = false;
       1|                                break;
        |                                
-     49|                        default:
-     49|                                break;
+     88|                        default:
+     88|                                break;
        |                }
        |        }
        |}
        |
        |private void render() {
-     66|        glClearColor(0.1f, 0.1f, 0.1f, 1f);
-     66|        glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+    482|        glClearColor(0.1f, 0.1f, 0.1f, 1f);
+    482|        glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
        |        
-     66|        glMatrixMode(GL_PROJECTION);
-     66|        glLoadIdentity();
-     66|        glViewport(0, 0, 800, 600);
-     66|        glOrtho(0, 800, 0, 600, -1, 1);
-     66|        glMatrixMode(GL_MODELVIEW);
-     66|        glLoadIdentity();
+    482|        glMatrixMode(GL_PROJECTION);
+    482|        glLoadIdentity();
+    482|        glViewport(0, 0, 800, 600);
+    482|        glOrtho(0, 800, 0, 600, -1, 1);
+    482|        glMatrixMode(GL_MODELVIEW);
+    482|        glLoadIdentity();
        |        
-     66|        glRasterPos3f(0, 600, 0);
-     66|        glPixelZoom(1f, -1f);
-     66|        glDrawPixels(width, height, GL_RGB, GL_UNSIGNED_BYTE, pixels.ptr);
+    482|        glRasterPos3f(0, 600, 0);
+    482|        glPixelZoom(zoom * 1f, zoom * -1f);
+    482|        glDrawPixels(width, height, GL_RGB, GL_UNSIGNED_BYTE, pixels.ptr);
        |
-     66|        SDL_GL_SwapWindow(window);
+    482|        SDL_GL_SwapWindow(window);
        |}
        |
        |private void limitFps() {
-     66|        static StopWatch sw = StopWatch();
-     66|        enum maxFPS = 60;
+    482|        static StopWatch sw = StopWatch();
+    482|        enum maxFPS = 60;
        |        
-     66|        if(maxFPS != -1) {
-     66|                long desiredNs = 1_000_000_000 / maxFPS; // How much time the frame should take
+    482|        if(maxFPS != -1) {
+    482|                long desiredNs = 1_000_000_000 / maxFPS; // How much time the frame should take
        |                
-     66|                if(desiredNs - sw.peek.nsecs >= 0)
-     66|                        Thread.sleep(nsecs(desiredNs - sw.peek.nsecs));
+    482|                if(desiredNs - sw.peek.nsecs >= 0)
+    158|                        Thread.sleep(nsecs(desiredNs - sw.peek.nsecs));
        |                
-     66|                sw.reset();
-     66|                sw.start();
+    482|                sw.reset();
+    482|                sw.start();
        |        }
        |}
 source/app.d is 100% covered

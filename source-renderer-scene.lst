@@ -1,0 +1,15 @@
+       |﻿module renderer.scene;
+       |
+       |import renderer.objects.sceneobject;
+       |
+       |class Scene
+       |{
+       |        SceneObject[] objects;
+       |
+      1|        this()
+       |        {
+       |
+       |        }
+       |}
+       |
+source/renderer/scene.d is 100% covered

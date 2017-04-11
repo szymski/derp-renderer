@@ -1,0 +1,20 @@
+       |﻿module renderer.objects.sphere;
+       |
+       |import renderer.objects.sceneobject;
+       |
+       |class Sphere : SceneObject
+       |{
+       |        float radius;
+       |
+      1|        this(vec3f position, float radius)
+       |        {
+      1|                this.position = position;
+      1|                this.radius = radius;
+       |        }
+       |
+       |        override float getDistance(vec3f origin) {
+ 990948|                return (origin - position).length - radius;
+       |        }
+       |}
+       |
+source/renderer/objects/sphere.d is 100% covered

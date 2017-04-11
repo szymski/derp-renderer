@@ -1,7 +1,8 @@
 import std.stdio;
 
 import std.stdio, std.datetime, std.file, std.string, core.thread, std.experimental.logger, derelict.sdl2.sdl, derelict.opengl3.gl;
-import renderer.renderer;
+import gfm.math.vector;
+import renderer.renderer, renderer.scene, renderer.objects.sphere;
 
 SDL_Window* window;
 SDL_Renderer* sdlRenderer;
@@ -10,13 +11,17 @@ bool running = true;
 
 enum width = 128;
 enum height = 128;
+enum zoom = 3;
 
 Renderer myRenderer;
 Color[] pixels;
 
 void main()
 {
-	myRenderer = new Renderer(width, height);
+	Scene scene = new Scene();
+	scene.objects ~= new Sphere(vec3f(0, 0, -5f), 3f);
+
+	myRenderer = new Renderer(scene, width, height);
 	pixels = myRenderer.render();
 
 	start();
@@ -87,7 +92,7 @@ private void render() {
 	glLoadIdentity();
 	
 	glRasterPos3f(0, 600, 0);
-	glPixelZoom(1f, -1f);
+	glPixelZoom(zoom * 1f, zoom * -1f);
 	glDrawPixels(width, height, GL_RGB, GL_UNSIGNED_BYTE, pixels.ptr);
 
 	SDL_GL_SwapWindow(window);

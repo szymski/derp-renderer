@@ -1,0 +1,17 @@
+       |﻿module renderer.objects.sceneobject;
+       |
+       |public import gfm.math;
+       |
+       |abstract class SceneObject
+       |{
+       |        vec3f position;
+       |
+      1|        this()
+       |        {
+       |
+       |        }
+       |
+       |        float getDistance(vec3f origin);
+       |}
+       |
+source/renderer/objects/sceneobject.d is 100% covered

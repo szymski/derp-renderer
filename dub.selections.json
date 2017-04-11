@@ -3,6 +3,7 @@
 	"versions": {
 		"derelict-sdl2": "2.0.2",
 		"derelict-util": "2.0.6",
+		"gfm": "6.2.7",
 		"derelict-gl3": "1.0.22"
 	}
 }

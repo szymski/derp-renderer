@@ -1,21 +1,33 @@
        |﻿module renderer.renderer;
        |
+       |import renderer.scene, renderer.objects.sceneobject;
+       |import gfm.math;
+       |import std.math;
+       |
        |struct Color {
        |        ubyte r, g, b;
        |
-0000000|        this(ubyte r = 0, ubyte g = 0, ubyte b = 0) {
-0000000|                this.r = r;
-0000000|                this.g = g;
-0000000|                this.b = b;
+  16384|        this(ubyte r = 0, ubyte g = 0, ubyte b = 0) {
+  16384|                this.r = r;
+  16384|                this.g = g;
+  16384|                this.b = b;
+       |        }
+       |
+       |        static Color fromVector(vec3f color) {
+  16384|                return Color(cast(ubyte)clamp(color.x * 255, 0, 255),
+       |                        cast(ubyte)clamp(color.y * 255, 0, 255),
+       |                        cast(ubyte)clamp(color.z * 255, 0, 255));
        |        }
        |}
        |
        |class Renderer
        |{
+       |        Scene scene;
        |        int width, height;
        |
-      1|        this(int width, int height)
+      1|        this(Scene scene, int width, int height)
        |        {
+      1|                this.scene = scene;
       1|                this.width = width;
       1|                this.height = height;
        |        }
@@ -27,12 +39,75 @@
        |
     387|                foreach(y; 0 .. height) {
   49536|                        foreach(x; 0 .. width) {
-  16384|                                pixels[y * width + x].r = cast(ubyte)uniform(0, 255);
+  16384|                                pixels[y * width + x] = Color.fromVector(raymarchPixel(x, y));
        |                        }
        |                }
        |
       1|                return pixels;
        |        }
+       |
+       |        vec3f raymarchPixel(int x, int y) {
+  16384|                vec3f origin = vec3f(0, 0, 0);
+  16384|                vec3f direction = vec3f(x / cast(float)width * 2f - 1f, y / cast(float)height * 2f - 1f, -1f).normalized;
+       |
+  16384|                return raymarch(origin, direction);
+       |        }
+       |
+       |        enum maxIterations = 64;
+       |        enum epsilon = 0.0001f;
+       |
+       |        enum skyColor = vec3f(0.1f, 0.5f, 0.9f);
+       |
+       |        vec3f raymarch(vec3f origin, vec3f direction) {
+  16384|                int i = 0;
+       |
+1950332|                for(; i < maxIterations; i++) {
+ 983358|                        SceneObject object;
+ 983358|                        float distance = getDistance(origin, object);
+       |
+ 983358|                        if(distance < epsilon) {
+   1265|                                vec3f normal = computeNormal(origin);
+   1265|                                return normal;
+       |                                //sbreak;
+       |                        }
+ 982093|                        else if(i == maxIterations - 1) {
+  15119|                                return skyColor;
+       |                        }
+       |
+ 966974|                        origin += direction * distance;
+       |                }
+       |
+0000000|                return vec3f(i / cast(float)maxIterations);
+       |        }
+       |
+       |        float getDistance(vec3f origin, ref SceneObject object) {
+ 990948|                SceneObject closestObj = null;
+ 990948|                float closestDistance = 0f;
+       |
+5945688|                foreach(obj; scene.objects) {
+ 990948|                        float distance = obj.getDistance(origin - obj.position);
+       |                        
+ 990948|                        if(closestObj is null || distance < closestDistance) {
+ 990948|                                closestObj = obj;
+ 990948|                                closestDistance = distance;
+       |                        }
+       |                }
+       |
+ 990948|                object = closestObj;
+       |
+ 990948|                return closestDistance;
+       |        }
+       |
+       |        vec3f computeNormal(vec3f point) {
+   1265|                float d = 0.01f;
+   1265|                SceneObject obj;
+       |
+   1265|                return vec3f(
+       |                                getDistance(point + vec3f(d, 0, 0), obj) - getDistance(point + vec3f(-d, 0, 0), obj),
+       |                                getDistance(point + vec3f(0, d, 0), obj) - getDistance(point + vec3f(0, -d, 0), obj),
+       |                                getDistance(point + vec3f(0, 0, d), obj) - getDistance(point + vec3f(0, 0, -d), obj)
+       |                        ).normalized;
+       |        }
        |}
        |
-source/renderer/renderer.d is 66% covered
+source/renderer/renderer.d is 97% covered
