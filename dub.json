@@ -1,0 +1,8 @@
+{
+	"name": "derp-renderer",
+	"description": "A minimal D application.",
+	"copyright": "Copyright © 2017, szymski",
+	"authors": ["szymski"],
+	"dependencies": {
+	}
+}
