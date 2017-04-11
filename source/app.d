@@ -1,28 +1,76 @@
 import std.stdio;
 
-import std.stdio, std.datetime, std.file, std.string, core.thread, std.experimental.logger, derelict.sdl2.sdl, derelict.opengl3.gl;
-import gfm.math.vector;
-import renderer.renderer, renderer.scene, renderer.objects.sphere;
+import std.stdio, std.datetime, std.file, std.string, core.thread, std.experimental.logger, derelict.sdl2.sdl, derelict.opengl3.gl, std.math;
+import gfm.math.vector, gfm.math.quaternion;
+import renderer.renderer, renderer.scene, renderer.objects.sphere, renderer.objects.plane, renderer.objects.box;
 
 SDL_Window* window;
 SDL_Renderer* sdlRenderer;
 
 bool running = true;
 
-enum width = 128;
-enum height = 128;
-enum zoom = 3;
+enum width = 256;
+enum height = 256;
+enum zoom = 2;
 
 Renderer myRenderer;
-Color[] pixels;
+Color[width * height] pixels;
+
+enum progressive = true;
+
+static if(progressive) {
+	vec3f[width * height] rawPixels;
+}
 
 void main()
 {
 	Scene scene = new Scene();
-	scene.objects ~= new Sphere(vec3f(0, 0, -5f), 3f);
+	scene.objects ~= new Plane(vec3f(0, -3f, 0), vec3f(0, 1f, 0));
+	scene.objects ~= new Plane(vec3f(0, 0, -6f), vec3f(0.5f, 0f, 1f).normalized);
+	//scene.objects ~= new Plane(vec3f(0, 2f, 0), vec3f(0, -1f, 0));
+
+	Box box = new Box(vec3f(-1.8f, -3f + 0.5f, -2f), vec3f(1f, 1f, 1f));
+	box.color = vec3f(0.8, 0.2f, 0.9f);
+	scene.objects ~= box;
+
+	Sphere sphere = new Sphere(vec3f(0, 0, -3f), 3f);
+	sphere.color = vec3f(0.3, 1f, 0.1f);
+	scene.objects ~= sphere;
+
+	sphere = new Sphere(vec3f(-1f, -1f, -2f), 2f);
+	sphere.color = vec3f(1f, 0.5f, 0.2f);
+	scene.objects ~= sphere;
+
+	Sphere lightSphere = new Sphere(vec3f(-10f, 12f, 5f), 10f);
+	lightSphere.color = vec3f(1f, 0.9f, 0.8f);
+	lightSphere.emission = 0f;
+	scene.objects ~= lightSphere;
+
+	lightSphere = new Sphere(vec3f(2.8f, -3f + 2.0f, -4f), 0.8f);
+	lightSphere.color = vec3f(0.5f, 0.8f, 1f);
+	lightSphere.emission = 6f;
+	scene.objects ~= lightSphere;
+
+	lightSphere = new Sphere(vec3f(0.5f, -3f + 2.0f, -1.5f), 0.9f);
+	lightSphere.color = vec3f(1f, 0.8f, 0.5f);
+	lightSphere.emission = 6f;
+	scene.objects ~= lightSphere;
 
 	myRenderer = new Renderer(scene, width, height);
-	pixels = myRenderer.render();
+	myRenderer.eyePosition = vec3f(0, 0, 2);
+	//myRenderer.eyeRotation = quatf.fromEulerAngles(0, -PI * 0.5f, 0) * quatf.fromEulerAngles(0.8f, 0, 0);
+
+	static if(!progressive) {
+		pixels = myRenderer.renderToRgb888(10);
+	}
+
+	static if(progressive) {
+		foreach(y; 0 .. height) {
+			foreach(x; 0 .. width) {
+				rawPixels[y * width + x] = vec3f(0, 0, 0);
+			}
+		}
+	}
 
 	start();
 }
@@ -50,16 +98,28 @@ private void openWindow() {
 	
 	log("Creating window");
 	SDL_CreateWindowAndRenderer(800, 600, SDL_WINDOW_OPENGL, &window, &sdlRenderer);
-	SDL_SetWindowTitle(window, "Gay Boy Emulator".toStringz);
+	SDL_SetWindowTitle(window, "Derp renderer".toStringz);
 	log("Creating OpenGL context");
 	SDL_GL_CreateContext(window);
 }
 
 private void enterLoop() {
 	log("Entering main loop");
-	
+
 	while(running) {
 		updateEvents();
+
+		static if(progressive) {
+			vec3f[] newRawPixels = myRenderer.render(1);
+
+			foreach(y; 0 .. height) {
+				foreach(x; 0 .. width) {
+					rawPixels[y * width + x] += newRawPixels[y * width + x] * 0.005f;
+					pixels[y * width + x] = Color.fromVector(rawPixels[y * width + x]);
+				}
+			}
+		}
+
 		render();
 		limitFps();
 	}

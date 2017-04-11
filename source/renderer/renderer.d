@@ -2,12 +2,13 @@
 
 import renderer.scene, renderer.objects.sceneobject;
 import gfm.math;
-import std.math;
+import std.math, std.typecons, std.conv, std.random;
+import std.experimental.logger;
 
 struct Color {
-	ubyte r, g, b;
+	ubyte r = 0, g = 0, b = 0;
 
-	this(ubyte r = 0, ubyte g = 0, ubyte b = 0) {
+	this(ubyte r, ubyte g, ubyte b) {
 		this.r = r;
 		this.g = g;
 		this.b = b;
@@ -24,41 +25,120 @@ class Renderer
 {
 	Scene scene;
 	int width, height;
+	float aspectRatio;
+
+	vec3f eyePosition = vec3f(0, 0, 0);
+	quatf eyeRotation = quatf.fromEulerAngles(0, 0, 0);
 
 	this(Scene scene, int width, int height)
 	{
 		this.scene = scene;
 		this.width = width;
 		this.height = height;
+
+		aspectRatio = width / cast(float)height;
 	}
 
-	Color[] render() {
-		Color[] pixels = new Color[height * width];
-
-		import std.random;
+	Color[] renderToRgb888(int iterations) {
+		Color[] bytePixels = new Color[height * width];
+		vec3f[] rawPixels  = render(iterations);
 
 		foreach(y; 0 .. height) {
 			foreach(x; 0 .. width) {
-				pixels[y * width + x] = Color.fromVector(raymarchPixel(x, y));
+				bytePixels[y * width + x] = Color.fromVector(rawPixels[y * width + x]);
 			}
 		}
 
-		return pixels;
+		return bytePixels;
 	}
 
-	vec3f raymarchPixel(int x, int y) {
-		vec3f origin = vec3f(0, 0, 0);
-		vec3f direction = vec3f(x / cast(float)width * 2f - 1f, y / cast(float)height * 2f - 1f, -1f).normalized;
+	vec3f[] render(int iterations) {
+		vec3f[] rawPixels  = new vec3f[height * width];
 
-		return raymarch(origin, direction);
+		foreach(y; 0 .. height) {
+			foreach(x; 0 .. width) {
+				rawPixels[y * width + x] = vec3f(0, 0, 0);
+			}
+		}
+
+		float singleIterFactor = 1f / cast(float)iterations;
+
+		foreach(i; 0 .. iterations) {
+			log("Iteration " ~ (i + 1).to!string);
+
+			foreach(y; 0 .. height) {
+				foreach(x; 0 .. width) {
+					rawPixels[y * width + x] += renderPixel(x, y) * singleIterFactor;
+				}
+			}
+		}
+
+		return rawPixels;
 	}
 
-	enum maxIterations = 64;
-	enum epsilon = 0.0001f;
+	vec3f renderPixel(int x, int y) {
+		vec3f origin = eyePosition;
+		vec3f direction = eyeRotation * vec3f((x / cast(float)width * 2f - 1f) * aspectRatio, y / cast(float)height * -2f + 1f, -1f).normalized;
+
+		return pathTrace(origin, direction)[0];
+	}
 
 	enum skyColor = vec3f(0.1f, 0.5f, 0.9f);
+	enum directionLightDir = vec3f(0, -0.5f, -1f).normalized;
 
-	vec3f raymarch(vec3f origin, vec3f direction) {
+	Tuple!(vec3f, vec3f) pathTrace(vec3f origin, vec3f direction, int depth = 0, vec3f accumColor = vec3f(0, 0, 0), vec3f maskColor = vec3f(1, 1, 1)) {
+		if(depth > 3)
+			return tuple(accumColor, maskColor);
+
+		vec3f hitPos, hitNormal;
+		SceneObject hitObject;
+
+		if(raymarch(origin, direction, hitPos, hitNormal, hitObject)) {
+			maskColor *= hitObject.color;
+			accumColor += maskColor * hitObject.emission;
+
+			vec3f dir = getRandomHemisphereDir(hitNormal);
+
+			maskColor *= dir.dot(hitNormal);
+
+			return pathTrace(hitPos + dir * epsilon * 5, dir, depth + 1, accumColor, maskColor);
+		}
+		else {
+			maskColor = maskColor * skyColor;
+			accumColor += maskColor * 2f;
+		}
+
+		return tuple(accumColor, maskColor);
+	}
+
+	vec3f getRandomHemisphereDir(vec3f normal) {
+		vec3f dir = vec3f(uniform(-1f, 1f), uniform(-1f, 1f), uniform(-1f, 1f));
+
+		if(dir.dot(normal) < 0)
+			return -dir;
+
+		return dir;
+	}
+
+	vec3f getRandomHemisphereDirNew(vec3f normal) {
+		float rand1 = 2f * PI * uniform(-1f, 1f);
+		float rand2 = uniform(-1f, 1f);
+		float rand2s = sqrt(rand2);
+
+		vec3f w = normal;
+		vec3f axis = abs(w.x) > 0.1f ? vec3f(0f, 1f, 0f) : vec3f(1f, 0f, 0f);
+		vec3f u = axis.cross(w).normalized;
+		vec3f v = w.cross(u);
+
+		vec3f dir = (u * cos(rand1) * rand2s + v * sin(rand1) * rand2s + w * sqrt(1f - rand2)).normalized;
+		
+		return dir;
+	}
+
+	enum maxIterations = 120;
+	enum epsilon = 0.0001f;
+
+	bool raymarch(vec3f origin, vec3f direction, out vec3f hitPos, out vec3f hitNormal, out SceneObject hitObject) {
 		int i = 0;
 
 		for(; i < maxIterations; i++) {
@@ -66,21 +146,22 @@ class Renderer
 			float distance = getDistance(origin, object);
 
 			if(distance < epsilon) {
-				vec3f normal = computeNormal(origin);
-				return normal;
-				//sbreak;
+				hitPos = origin;
+				hitNormal = computeNormal(origin);
+				hitObject = object;
+				return true;
 			}
 			else if(i == maxIterations - 1) {
-				return skyColor;
+				return false;
 			}
 
 			origin += direction * distance;
 		}
 
-		return vec3f(i / cast(float)maxIterations);
+		return false;
 	}
 
-	float getDistance(vec3f origin, ref SceneObject object) {
+	float getDistance(vec3f origin, out SceneObject object) {
 		SceneObject closestObj = null;
 		float closestDistance = 0f;
 
