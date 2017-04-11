@@ -1,0 +1,38 @@
+       |﻿module renderer.renderer;
+       |
+       |struct Color {
+       |        ubyte r, g, b;
+       |
+0000000|        this(ubyte r = 0, ubyte g = 0, ubyte b = 0) {
+0000000|                this.r = r;
+0000000|                this.g = g;
+0000000|                this.b = b;
+       |        }
+       |}
+       |
+       |class Renderer
+       |{
+       |        int width, height;
+       |
+      1|        this(int width, int height)
+       |        {
+      1|                this.width = width;
+      1|                this.height = height;
+       |        }
+       |
+       |        Color[] render() {
+      1|                Color[] pixels = new Color[height * width];
+       |
+       |                import std.random;
+       |
+    387|                foreach(y; 0 .. height) {
+  49536|                        foreach(x; 0 .. width) {
+  16384|                                pixels[y * width + x].r = cast(ubyte)uniform(0, 255);
+       |                        }
+       |                }
+       |
+      1|                return pixels;
+       |        }
+       |}
+       |
+source/renderer/renderer.d is 66% covered

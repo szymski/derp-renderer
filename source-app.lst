@@ -1,0 +1,110 @@
+       |import std.stdio;
+       |
+       |import std.stdio, std.datetime, std.file, std.string, core.thread, std.experimental.logger, derelict.sdl2.sdl, derelict.opengl3.gl;
+       |import renderer.renderer;
+       |
+       |SDL_Window* window;
+       |SDL_Renderer* sdlRenderer;
+       |
+       |bool running = true;
+       |
+       |enum width = 128;
+       |enum height = 128;
+       |
+       |Renderer myRenderer;
+       |Color[] pixels;
+       |
+       |void main()
+       |{
+      1|        myRenderer = new Renderer(width, height);
+      1|        pixels = myRenderer.render();
+       |
+      1|        start();
+       |}
+       |
+       |void start() {
+      2|        log("Starting derp-renderer");
+      1|        loadLibraries();
+      1|        openWindow();
+      1|        enterLoop();
+       |}
+       |
+       |private void loadLibraries() {
+      2|        log("Loading libraries");
+      1|        DerelictSDL2.load("lib/SDL2");
+      1|        DerelictGL.load();
+       |}
+       |
+       |private void openWindow() {
+      1|        SDL_GL_SetAttribute(SDL_GL_RED_SIZE, 8);
+      1|        SDL_GL_SetAttribute(SDL_GL_GREEN_SIZE, 8);
+      1|        SDL_GL_SetAttribute(SDL_GL_BLUE_SIZE, 8);
+      1|        SDL_GL_SetAttribute(SDL_GL_ALPHA_SIZE, 8);
+      1|        SDL_GL_SetAttribute(SDL_GL_BUFFER_SIZE, 32);
+      1|        SDL_GL_SetAttribute(SDL_GL_DOUBLEBUFFER, 1);
+       |        
+      2|        log("Creating window");
+      1|        SDL_CreateWindowAndRenderer(800, 600, SDL_WINDOW_OPENGL, &window, &sdlRenderer);
+      1|        SDL_SetWindowTitle(window, "Gay Boy Emulator".toStringz);
+      2|        log("Creating OpenGL context");
+      1|        SDL_GL_CreateContext(window);
+       |}
+       |
+       |private void enterLoop() {
+      2|        log("Entering main loop");
+       |        
+     67|        while(running) {
+     66|                updateEvents();
+     66|                render();
+     66|                limitFps();
+       |        }
+       |}
+       |
+       |private void updateEvents() {
+     66|        SDL_Event event;
+       |        
+    116|        while(SDL_PollEvent(&event)) {
+     50|                switch(event.type) {
+      1|                        case SDL_QUIT:
+      1|                                running = false;
+      1|                                break;
+       |                                
+     49|                        default:
+     49|                                break;
+       |                }
+       |        }
+       |}
+       |
+       |private void render() {
+     66|        glClearColor(0.1f, 0.1f, 0.1f, 1f);
+     66|        glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+       |        
+     66|        glMatrixMode(GL_PROJECTION);
+     66|        glLoadIdentity();
+     66|        glViewport(0, 0, 800, 600);
+     66|        glOrtho(0, 800, 0, 600, -1, 1);
+     66|        glMatrixMode(GL_MODELVIEW);
+     66|        glLoadIdentity();
+       |        
+     66|        glRasterPos3f(0, 600, 0);
+     66|        glPixelZoom(1f, -1f);
+     66|        glDrawPixels(width, height, GL_RGB, GL_UNSIGNED_BYTE, pixels.ptr);
+       |
+     66|        SDL_GL_SwapWindow(window);
+       |}
+       |
+       |private void limitFps() {
+     66|        static StopWatch sw = StopWatch();
+     66|        enum maxFPS = 60;
+       |        
+     66|        if(maxFPS != -1) {
+     66|                long desiredNs = 1_000_000_000 / maxFPS; // How much time the frame should take
+       |                
+     66|                if(desiredNs - sw.peek.nsecs >= 0)
+     66|                        Thread.sleep(nsecs(desiredNs - sw.peek.nsecs));
+       |                
+     66|                sw.reset();
+     66|                sw.start();
+       |        }
+       |}
+source/app.d is 100% covered

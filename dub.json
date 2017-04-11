@@ -4,5 +4,7 @@
 	"copyright": "Copyright © 2017, szymski",
 	"authors": ["szymski"],
 	"dependencies": {
+		"derelict-sdl2": "~>2.0.0",
+		"derelict-gl3": "~>1.0.18",
 	}
 }

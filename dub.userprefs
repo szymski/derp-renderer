@@ -1,0 +1,13 @@
+﻿<Properties StartupItem="dub.json">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Default" PreferredExecutionTarget="cov" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="source/renderer/renderer.d">
+    <Files>
+      <File FileName="source/app.d" Line="22" Column="10" />
+      <File FileName="source/renderer/renderer.d" Line="20" Column="24" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
