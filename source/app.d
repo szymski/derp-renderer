@@ -1,26 +1,31 @@
 import std.stdio;
 
 import std.stdio, std.datetime, std.file, std.string, core.thread, std.experimental.logger, derelict.sdl2.sdl, derelict.opengl3.gl, std.math;
-import gfm.math.vector, gfm.math.quaternion;
-import renderer.renderer, renderer.scene, renderer.objects.sphere, renderer.objects.plane, renderer.objects.box;
+import gfm.math.vector, gfm.math.quaternion, gfm.math.matrix;
+import renderer.renderer, renderer.scene, renderer.objects.sphere, renderer.objects.plane, renderer.objects.box, renderer.objects.chain, renderer.objects.sceneobject : SceneObject;
 
 SDL_Window* window;
 SDL_Renderer* sdlRenderer;
 
 bool running = true;
 
-enum width = 128;
-enum height = 128;
-enum zoom = 4;
-
-Renderer myRenderer;
-Color[width * height] pixels;
-
 enum progressive = true;
 
 static if(progressive) {
+	enum width = 800;
+	enum height = 600;
+	enum zoom = 1;
+
 	vec3f[width * height] rawPixels;
 }
+else {
+	enum width = 256;
+	enum height = 256;
+	enum zoom = 2;
+}
+
+Color[width * height] pixels;
+Renderer myRenderer;
 
 void main()
 {
@@ -84,19 +89,27 @@ void main()
 	}
 
 	{
-		Sphere sphere = new Sphere(vec3f(-1f, -2f, -1.5f), 1f);
-
-		scene.objects ~= sphere;
+		SceneObject obj = new Sphere(vec3f(-1.5f, -2f, -1.5f), 1f);
+		scene.objects ~= obj;
 	}
 
 	{
-		Sphere sphere = new Sphere(vec3f(1f, -3f + 1.2f, 0f), 1.2f);
-		scene.objects ~= sphere;
+		SceneObject obj = new Box(vec3f(1f, -3f + 1.2f, 0f), vec3f(1f, 1f, 1f))
+			.subtract(new Sphere(vec3f(1f, -3f + 1.2f, 0f), 1.4f))
+				.rotate(quatf.fromEulerAngles(0, PI / 8f, 0));
+		scene.objects ~= obj;
 	}
 
+//	{
+//		Box box = new Box(vec3f(-2f, 3f, 0), vec3f(1f, 0.01f, 1f));
+//		box.color = vec3f(1f, 0.5f, 0.1f);
+//		box.emission = 5f;
+//		scene.objects ~= box;
+//	}
+
 	{
-		Box box = new Box(vec3f(0, 3f, 0), vec3f(1f, 0.01f, 1f));
-		box.color = vec3f(1f, 0.95f, 0.9f);
+		Box box = new Box(vec3f(0f, 3f, 0), vec3f(1f, 0.05f, 1f));
+		box.color = vec3f(0.5f, 0.5f, 0.5f);
 		box.emission = 5f;
 		scene.objects ~= box;
 	}
@@ -156,15 +169,22 @@ private void enterLoop() {
 		updateEvents();
 
 		static if(progressive) {
+			static int currentIteration = 1;
+
 			vec3f[] newRawPixels = myRenderer.render(1);
+
+			import std.conv;
+			log("Iteration " ~ (currentIteration).to!string);
 
 			foreach(y; 0 .. height) {
 				foreach(x; 0 .. width) {
-					rawPixels[y * width + x] += newRawPixels[y * width + x] * 0.001f;
+					rawPixels[y * width + x] += newRawPixels[y * width + x];
 
-					pixels[y * width + x] = Color.fromVector(rawPixels[y * width + x]);
+					pixels[y * width + x] = Color.fromVector(rawPixels[y * width + x] / cast(float)currentIteration);
 				}
 			}
+
+			currentIteration++;
 		}
 
 		render();

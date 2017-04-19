@@ -81,7 +81,7 @@ class Renderer
 		float singleIterFactor = 1f / cast(float)iterations;
 
 		foreach(i; 0 .. iterations) {
-			log("Iteration " ~ (i + 1).to!string);
+			//log("Iteration " ~ (i + 1).to!string);
 
 			foreach(y; 0 .. height) {
 				foreach(x; 0 .. width) {
@@ -119,7 +119,9 @@ class Renderer
 
 	enum nextEventEstimation = true;
 
-	Tuple!(vec3f, vec3f, SceneObject) pathTrace(vec3f origin, vec3f direction, int depth = 0, vec3f accumColor = vec3f(0, 0, 0), vec3f maskColor = vec3f(1, 1, 1)) {
+	enum MAX_BOUNCES = 3;
+
+	Tuple!(vec3f, vec3f, SceneObject) pathTrace(vec3f origin, vec3f direction, int depth = 0, vec3f accumColor = vec3f(0, 0, 0), vec3f maskColor = vec3f(1, 1, 1), bool onlyOnce = false) {
 		if(depth > 3)
 			return tuple(accumColor, maskColor, cast(SceneObject)null);
 
@@ -130,29 +132,29 @@ class Renderer
 			maskColor *= hitObject.color;
 			accumColor += maskColor * hitObject.emission;
 
+			if(onlyOnce || hitObject.isLight)
+				return tuple(accumColor, maskColor, hitObject);
+
 			if(hitNormal.x.isNaN, hitNormal.y.isNaN, hitNormal.z.isNaN)
 				return tuple(accumColor, maskColor, hitObject);
 
-			if(nextEventEstimation) {
+			static if(nextEventEstimation) {
 				int count = 1;
 				vec3f totalAccum = accumColor, totalMask = maskColor;
 
 				vec3f hemisphereDir = getRandomHemisphereDir(hitNormal);
 
 				foreach(obj; scene.objects) {
-					if(obj.emission < 0.2f)
+					if(!obj.isLight)
 						continue;
 
-					count++;
-
 					vec3f dir = ((obj.position - hitPos).normalized * 4 + hemisphereDir).normalized;
-					totalMask += dir.dot(hitNormal);
 
-
-					auto result = pathTrace(hitPos + dir * epsilon * 5, dir, depth + 1, accumColor, maskColor);
+					auto result = pathTrace(hitPos + dir * epsilon * 5, dir, 0, accumColor, maskColor * dir.dot(hitNormal), true);
 					if(result[2] == obj) {
+						count++;
 						totalAccum += result[0];
-						totalMask += result[1];
+						//totalMask += result[1];
 					}
 				}
 
@@ -163,15 +165,14 @@ class Renderer
 				totalAccum += result[0];
 				totalMask += result[1];
 
-				return tuple(totalAccum / count, totalMask / count, hitObject);
+				return tuple(totalAccum / count, totalMask, hitObject);
 			}
+			else {
+				vec3f dir = getRandomHemisphereDir(hitNormal);		
+				maskColor *= dir.dot(hitNormal);
 
-			/*
-			vec3f dir = getRandomHemisphereDir(hitNormal);		
-			maskColor *= dir.dot(hitNormal);
-
-			return pathTrace(hitPos + dir * epsilon * 5, dir, depth + 1, accumColor, maskColor);
-			*/
+				return pathTrace(hitPos + dir * epsilon * 5, dir, depth + 1, accumColor, maskColor);
+			}
 		}
 		else {
 			//maskColor = maskColor * skyColor;
@@ -206,7 +207,7 @@ class Renderer
 	}
 
 	enum maxIterations = 120;
-	enum epsilon = 0.00001f;
+	enum epsilon = 0.001f;
 
 	bool raymarch(vec3f origin, vec3f direction, out vec3f hitPos, out vec3f hitNormal, out SceneObject hitObject) {
 		int i = 0;
@@ -250,7 +251,7 @@ class Renderer
 	}
 
 	vec3f computeNormal(vec3f point) {
-		float d = 0.001f;
+		float d = 0.01f;
 		SceneObject obj;
 
 		return vec3f(
