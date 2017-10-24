@@ -1,13 +1,13 @@
 ﻿<Properties StartupItem="dub.json">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Default" PreferredExecutionTarget="release" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="source/app.d">
+  <MonoDevelop.Ide.Workbench ActiveDocument="source\renderer\renderer.d">
     <Files>
-      <File FileName="source/app.d" Line="175" Column="66" />
-      <File FileName="source/renderer/renderer.d" Line="211" Column="22" />
-      <File FileName="source/renderer/objects/sceneobject.d" Line="21" Column="2" />
-      <File FileName="source/renderer/objects/plane.d" Line="3" Column="1" />
-      <File FileName="source/renderer/objects/chain.d" Line="31" Column="51" />
-      <File FileName="source/renderer/objects/sphere.d" Line="12" Column="24" />
+      <File FileName="source\app.d" Line="28" Column="1" />
+      <File FileName="source\renderer\renderer.d" Line="193" Column="2" />
+      <File FileName="source\renderer\objects\sceneobject.d" Line="1" Column="1" />
+      <File FileName="source\renderer\objects\plane.d" Line="1" Column="1" />
+      <File FileName="source\renderer\objects\chain.d" Line="1" Column="1" />
+      <File FileName="source\renderer\objects\sphere.d" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

@@ -2,7 +2,7 @@
 
 import renderer.scene, renderer.objects.sceneobject;
 import gfm.math;
-import std.math, std.typecons, std.conv, std.random;
+import std.math, std.typecons, std.conv, std.random, std.algorithm : max;
 import std.experimental.logger;
 
 struct Color {
@@ -41,6 +41,17 @@ class Renderer
 		this.height = height;
 
 		aspectRatio = width / cast(float)height;
+
+		prepareLightsList();
+	}
+
+	private SceneObject[] _lights;
+
+	private void prepareLightsList() {
+		foreach(obj; scene.objects) {
+			if(obj.isLight)
+				_lights ~= obj;
+		}
 	}
 
 	Color[] renderToRgb888NoPathTrace() {
@@ -109,7 +120,7 @@ class Renderer
 
 	vec3f renderPixel(int x, int y) {
 		vec3f origin = eyePosition;
-		vec3f direction = eyeRotation * vec3f((x / cast(float)width * 2f - 1f) * aspectRatio, y / cast(float)height * -2f + 1f, -1f).normalized;
+		vec3f direction = eyeRotation * vec3f((x / cast(float)width * 2f - 1f) * aspectRatio + uniform(-1f / width, 1f / width), y / cast(float)height * -2f + 1f +  + uniform(-1f / height, 1f / height), -1f).normalized;
 
 		return pathTrace(origin, direction)[0];
 	}
@@ -119,24 +130,39 @@ class Renderer
 
 	enum nextEventEstimation = true;
 
-	enum MAX_BOUNCES = 3;
+	enum MAX_BOUNCES = 2;
 
 	Tuple!(vec3f, vec3f, SceneObject) pathTrace(vec3f origin, vec3f direction, int depth = 0, vec3f accumColor = vec3f(0, 0, 0), vec3f maskColor = vec3f(1, 1, 1), bool onlyOnce = false) {
-		if(depth > 3)
+		if(depth > MAX_BOUNCES)
 			return tuple(accumColor, maskColor, cast(SceneObject)null);
 
 		vec3f hitPos, hitNormal;
 		SceneObject hitObject;
 
 		if(raymarch(origin, direction, hitPos, hitNormal, hitObject)) {
+			auto originalMaskColor = maskColor;
 			maskColor *= hitObject.color;
 			accumColor += maskColor * hitObject.emission;
 
 			if(onlyOnce || hitObject.isLight)
 				return tuple(accumColor, maskColor, hitObject);
 
-			if(hitNormal.x.isNaN, hitNormal.y.isNaN, hitNormal.z.isNaN)
+			if(hitNormal.x.isNaN || hitNormal.y.isNaN || hitNormal.z.isNaN)
 				return tuple(accumColor, maskColor, hitObject);
+
+			if(hitObject.specular > 0f) {
+				auto newDir = ((direction - 2 * direction.dot(hitNormal) * hitNormal * (1f - hitObject.glossy)) + getRandomHemisphereDir(hitNormal) * hitObject.glossy).normalized;
+				float a = max(0f, (1f - newDir.normalized.dot(hitNormal)) * (1f - hitObject.specular)) + hitObject.specular;
+				auto reflection = pathTrace(hitPos + newDir * epsilon * 5, newDir, depth + 1, vec3f(0, 0, 0), originalMaskColor * (1f - hitObject.specular) + hitObject.color * hitObject.specular, false);
+				// return reflection;
+				// accumColor = accumColor * a + reflection[0] * (1f - a);
+
+				// accumColor = accumColor * (1f - hitObject.specular) + reflection[0] * hitObject.specular;
+				// maskColor *= (1f - hitObject.specular);
+
+				accumColor = accumColor * (1f - a) * (1f - hitObject.specular) + reflection[0] * a * hitObject.specular;
+				maskColor *= (1f - a) * (1f - hitObject.specular);
+			}
 
 			static if(nextEventEstimation) {
 				int count = 1;
@@ -144,10 +170,7 @@ class Renderer
 
 				vec3f hemisphereDir = getRandomHemisphereDir(hitNormal);
 
-				foreach(obj; scene.objects) {
-					if(!obj.isLight)
-						continue;
-
+				foreach(obj; _lights) {
 					vec3f dir = ((obj.position - hitPos).normalized * 4 + hemisphereDir).normalized;
 
 					auto result = pathTrace(hitPos + dir * epsilon * 5, dir, 0, accumColor, maskColor * dir.dot(hitNormal), true);
@@ -175,8 +198,8 @@ class Renderer
 			}
 		}
 		else {
-			//maskColor = maskColor * skyColor;
-			//accumColor += maskColor * 2f;
+			maskColor = maskColor * scene.skyColor;
+			accumColor += maskColor * scene.skyEmission;
 		}
 
 		return tuple(accumColor, maskColor, cast(SceneObject)null);
@@ -207,7 +230,7 @@ class Renderer
 	}
 
 	enum maxIterations = 120;
-	enum epsilon = 0.001f;
+	enum epsilon = 0.00005f;
 
 	bool raymarch(vec3f origin, vec3f direction, out vec3f hitPos, out vec3f hitNormal, out SceneObject hitObject) {
 		int i = 0;

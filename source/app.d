@@ -12,16 +12,16 @@ bool running = true;
 enum progressive = true;
 
 static if(progressive) {
-	enum width = 800;
-	enum height = 600;
-	enum zoom = 1;
+	enum width = 800 / 4;
+	enum height = 600 / 4;
+	enum zoom = 4;
 
 	vec3f[width * height] rawPixels;
 }
 else {
-	enum width = 256;
-	enum height = 256;
-	enum zoom = 2;
+	enum width = 800;
+	enum height = 600;
+	enum zoom = 1;
 }
 
 Color[width * height] pixels;
@@ -61,8 +61,37 @@ void main()
 //	lightSphere.emission = 6f;
 //	scene.objects ~= lightSphere;
 
+	// {
+	// 	Plane plane = new Plane(vec3f(0, -3f, 0), vec3f(0, 1f, 0));
+	// 	scene.objects ~= plane;
+	// }
+
+	// // {
+	// // 	SceneObject obj = new Sphere(vec3f(0, -2f, 0), 1f);
+	// // 	scene.objects ~= obj;
+	// // }
+
+	// // {
+	// // 	SceneObject obj = new Sphere(vec3f(-4f, -3f + 3f, -3f), 3f);
+	// // 	scene.objects ~= obj.displace;
+	// // }
+
+	// // {
+	// // 	SceneObject obj = new Sphere(vec3f(5f, 4f, 10f), 3f);
+	// // 	obj.color = vec3f(1f, 1f, 1f);
+	// // 	obj.emission = 13f;
+	// // 	scene.objects ~= obj;
+	// // }
+
+	// // {
+	// // 	SceneObject obj = new Sphere(vec3f(0f, -10f, 0f), 1f);
+	// // 	scene.objects ~= obj.repeat(vec3f(5f, 5f, 5f));
+	// // }
+
 	{
 		Plane plane = new Plane(vec3f(0, -3f, 0), vec3f(0, 1f, 0));
+		plane.specular = 0.2f;
+		plane.glossy = 0.05f;
 		scene.objects ~= plane;
 	}
 
@@ -77,6 +106,11 @@ void main()
 	}
 
 	{
+		Plane plane = new Plane(vec3f(0, 0, 9f), vec3f(0, 0, -1f));
+		scene.objects ~= plane;
+	}
+
+	{
 		Plane plane = new Plane(vec3f(-3f, 0, 0), vec3f(1f, 0, 0));
 		plane.color = vec3f(1f, 0.2f, 0.2f);
 		scene.objects ~= plane;
@@ -85,38 +119,121 @@ void main()
 	{
 		Plane plane = new Plane(vec3f(3f, 0, 0), vec3f(-1f, 0, 0));
 		plane.color = vec3f(0.2f, 1f, 0.2f);
+		plane.specular = 0.1f;
+		plane.glossy = 0.05f;
 		scene.objects ~= plane;
 	}
 
 	{
 		SceneObject obj = new Sphere(vec3f(-1.5f, -2f, -1.5f), 1f);
+		obj.specular = 1f;
+		obj.glossy = 0.1f;
 		scene.objects ~= obj;
 	}
 
+	// {
+	// 	SceneObject obj1 = new Sphere(vec3f(-0f, -2f, -1.5f), 1f);
+	// 	SceneObject obj2 = new Sphere(vec3f(-1.5f, -2f, -1.5f), 1f);
+	// 	scene.objects ~= obj1.blend(obj2);
+	// }
+
 	{
-		SceneObject obj = new Box(vec3f(1f, -3f + 1.2f, 0f), vec3f(1f, 1f, 1f))
-			.subtract(new Sphere(vec3f(1f, -3f + 1.2f, 0f), 1.4f))
+		SceneObject obj = new Box(vec3f(1f, -3f + 1f, 0f), vec3f(1f, 1f, 1f))
+			.subtract(new Sphere(vec3f(1f, -3f + 1f, 0f), 1.4f))
 				.rotate(quatf.fromEulerAngles(0, PI / 8f, 0));
 		scene.objects ~= obj;
 	}
 
-//	{
-//		Box box = new Box(vec3f(-2f, 3f, 0), vec3f(1f, 0.01f, 1f));
-//		box.color = vec3f(1f, 0.5f, 0.1f);
-//		box.emission = 5f;
-//		scene.objects ~= box;
-//	}
-
 	{
-		Box box = new Box(vec3f(0f, 3f, 0), vec3f(1f, 0.05f, 1f));
-		box.color = vec3f(0.5f, 0.5f, 0.5f);
-		box.emission = 5f;
+		Box box = new Box(vec3f(0f, 3f, 0), vec3f(1f, 0.01f, 1f));
+		box.color = vec3f(1f, 1f, 1f);
+		box.emission = 2f;
 		scene.objects ~= box;
 	}
 
+	// {
+	// 	Box box = new Box(vec3f(-2f, 3f, 0), vec3f(1f, 0.01f, 1f));
+	// 	box.color = vec3f(1f, 0.5f, 0.1f);
+	// 	box.emission = 2f;
+	// 	scene.objects ~= box;
+	// }
+
+	// {
+	// 	Box box = new Box(vec3f(2f, 3f, 0), vec3f(1f, 0.05f, 1f));
+	// 	box.color = vec3f(0.2f, 0.5f, 1f);
+	// 	box.emission = 2f;
+	// 	scene.objects ~= box;
+	// }
+
+	// scene.skyColor = vec3f(0.3f, 0.6f, 1f);
+	// scene.skyEmission = 1f;
+
+	// {
+	// 	Plane plane = new Plane(vec3f(0, -0.75f, 0f), vec3f(0, 1f, 0).normalized);
+	// 	plane.color = vec3f(1f, 1f, 1f);
+	// 	plane.specular = 0.3f;
+	// 	plane.glossy = 0.2f;
+	// 	scene.objects ~= plane;
+	// }
+
+	// {
+	// 	SceneObject obj = new Sphere(vec3f(0, 0, -5f), 1f);
+	// 	obj.color = vec3f(1f, 1f, 1f);
+	// 	// obj.reflective = true;
+	// 	scene.objects ~= obj;
+	// }
+
+	// {
+	// 	SceneObject obj = new Sphere(vec3f(3, 0, -4f), 1f);
+	// 	obj.color = vec3f(0.5f, 0.5f, 1f);
+	// 	obj.specular = 0.8f;
+	// 	obj.glossy = 0f;
+	// 	scene.objects ~= obj;
+	// }
+
+	// {
+	// 	SceneObject obj = new Sphere(vec3f(-3, 0, -4f), 1f);
+	// 	obj.color = vec3f(1f, 0.5f, 0.5f);
+	// 	obj.specular = 0.6f;
+	// 	obj.glossy = 0.2f;
+	// 	scene.objects ~= obj;
+	// }
+
+	// {
+	// 	SceneObject obj = new Sphere(vec3f(0.7f, -0.4f, -5f), 0.75f);
+	// 	obj.color = vec3f(1f, 1f, 0f);
+	// 	scene.objects ~= obj;
+	// }
+
+	// {
+	// 	SceneObject obj = new Sphere(vec3f(-0.7f, -0.4f, -5f), 0.75f);
+	// 	obj.color = vec3f(0f, 1f, 1f);
+	// 	scene.objects ~= obj;
+	// }
+
+	// {
+	// 	SceneObject obj = new Sphere(vec3f(0.7f, -0.5f, -3f), 0.25f);
+	// 	obj.color = vec3f(0f, 0.5f, 1f);
+	// 	scene.objects ~= obj;
+	// }
+
+	// {
+	// 	SceneObject obj = new Sphere(vec3f(-0.7f, -0.5f, -3f), 0.25f);
+	// 	obj.color = vec3f(0.5f, 0f, 1f);
+	// 	scene.objects ~= obj;
+	// }
+
+	// {
+	// 	SceneObject obj = new Sphere(vec3f(3f, 5f, 0f), 1f);
+	// 	obj.color = vec3f(1f, 1f, 1f);
+	// 	obj.emission = 3f;
+	// 	scene.objects ~= obj;
+	// }
+
 	myRenderer = new Renderer(scene, width, height);
+	// myRenderer.eyePosition = vec3f(0, 0f, 4.5f);
 	myRenderer.eyePosition = vec3f(0, 0f, 4.5f);
-	//myRenderer.eyeRotation = quatf.fromEulerAngles(0, -PI * 0.5f, 0) * quatf.fromEulerAngles(0.8f, 0, 0);
+	// myRenderer.eyeRotation = quatf.fromEulerAngles(PI * 0.25f, 0, 0);
 
 	static if(!progressive) {
 //		pixels = myRenderer.renderToRgb888(10);
@@ -171,10 +288,15 @@ private void enterLoop() {
 		static if(progressive) {
 			static int currentIteration = 1;
 
+			import std.datetime;
+			
+			StopWatch sw;
+			sw.start();
 			vec3f[] newRawPixels = myRenderer.render(1);
+			sw.stop();
 
 			import std.conv;
-			log("Iteration " ~ (currentIteration).to!string);
+			log("Iteration " ~ (currentIteration).to!string ~ " - elapsed: " ~ sw.peek().msecs.to!string);
 
 			foreach(y; 0 .. height) {
 				foreach(x; 0 .. width) {

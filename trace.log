@@ -1,0 +1,775 @@
+------------------
+	    1	_D3std12experimental6logger4core12__T3logTAyaZ3logFLAyaiAyaAyaAyaAyaZ12__dgliteral7MFNaNiNfZAya
+_D3app10openWindowFZ12__dgliteral1MFNaNbNiNfZAya	1	0	0
+------------------
+	    1	_D3std12experimental6logger4core12__T3logTAyaZ3logFLAyaiAyaAyaAyaAyaZ12__dgliteral7MFNaNiNfZAya
+_D3app10openWindowFZ12__dgliteral2MFNaNbNiNfZAya	1	0	0
+------------------
+	    1	_D3app5startFZv
+_D3app10openWindowFZv	1	6347382	6344344
+	    2	_D3std12experimental6logger4core12__T3logTAyaZ3logFNfLAyaiAyaAyaAyaAyaZv
+	    1	_D3std5range10primitives12__T5emptyTaZ5emptyFNaNbNdNiNfxAaZb
+------------------
+	    1	_D3app9enterLoopFZv
+_D3app12updateEventsFZv	1	4847	4847
+------------------
+	    1	_D3std12experimental6logger4core12__T3logTAyaZ3logFLAyaiAyaAyaAyaAyaZ12__dgliteral7MFNaNiNfZAya
+_D3app13loadLibrariesFZ12__dgliteral1MFNaNbNiNfZAya	1	0	0
+------------------
+	    1	_D3app5startFZv
+_D3app13loadLibrariesFZv	1	10736	182
+	    1	_D3std12experimental6logger4core12__T3logTAyaZ3logFNfLAyaiAyaAyaAyaAyaZv
+	    2	_D3std9algorithm9iteration40__T8splitterVAyaa6_61203d3d2062TAyaTAyaZ8splitterFNaNbNiNfAyaAyaZS3std9algorithm9iteration40__T8splitterVAyaa6_61203d3d2062TAyaTAyaZ8splitterFAyaAyaZ6Result
+	    2	_D3std5array102__T5arrayTS3std9algorithm9iteration40__T8splitterVAyaa6_61203d3d2062TAyaTAyaZ8splitterFAyaAyaZ6ResultZ5arrayFNaNbNfS3std9algorithm9iteration40__T8splitterVAyaa6_61203d3d2062TAyaTAyaZ8splitterFAyaAyaZ6ResultZAAya
+	    2	_D3std6string18__T9stripLeftTAyaZ9stripLeftFNaNfAyaZAya
+	    2	_D3std6string20__T10stripRightTAyaZ10stripRightFNaNiNfAyaZAya
+	    2	_D8derelict4util9sharedlib9SharedLib4loadMFAAyaZv
+	    1	_D8derelict4sdl23sdl18DerelictSDL2Loader11loadSymbolsMFZv
+	    1	_D8derelict7opengl32gl16DerelictGLLoader11loadSymbolsMFZv
+------------------
+	    1	_D3std12experimental6logger4core12__T3logTAyaZ3logFLAyaiAyaAyaAyaAyaZ12__dgliteral7MFNaNiNfZAya
+_D3app5startFZ12__dgliteral1MFNaNbNiNfZAya	1	0	0
+------------------
+	    1	_Dmain
+_D3app5startFZv	1	74163421	37
+	    1	_D3std12experimental6logger4core12__T3logTAyaZ3logFNfLAyaiAyaAyaAyaAyaZv
+	    1	_D3app13loadLibrariesFZv
+	    1	_D3app10openWindowFZv
+	    1	_D3app9enterLoopFZv
+------------------
+	    1	_D3app9enterLoopFZv
+_D3app8limitFpsFZv	1	61251	61251
+------------------
+	    1	_D3std12experimental6logger4core12__T3logTAyaZ3logFLAyaiAyaAyaAyaAyaZ12__dgliteral7MFNaNiNfZAya
+_D3app9enterLoopFZ12__dgliteral1MFNaNbNiNfZAya	1	0	0
+------------------
+	    1	_D3std12experimental6logger4core12__T3logTAyaZ3logFLAyaiAyaAyaAyaAyaZ12__dgliteral7MFNaNiNfZAya
+_D3app9enterLoopFZ12__dgliteral3MFNaNfZAya	1	136	80
+	    1	_D3std4conv11__T2toTAyaZ9__T2toTiZ2toFNaNbNfiZAya
+	    1	_D3std4conv11__T2toTAyaZ9__T2toTlZ2toFNaNbNflZAya
+------------------
+	    1	_D3app5startFZv
+_D3app9enterLoopFZv	1	67802174	54151
+	    2	_D3std12experimental6logger4core12__T3logTAyaZ3logFNfLAyaiAyaAyaAyaAyaZv
+	    1	_D3app12updateEventsFZv
+	    1	_D8renderer8renderer8Renderer6renderMFiZAS3gfm4math6vector17__T6VectorTfVii3Z6Vector
+	65536	_D3gfm4math6vector17__T6VectorTfVii3Z6Vector69__T10opOpAssignVAyaa1_2bTS3gfm4math6vector17__T6VectorTfVii3Z6VectorZ10opOpAssignMFNaNbNcNiNjNfS3gfm4math6vector17__T6VectorTfVii3Z6VectorZS3gfm4math6vector17__T6VectorTfVii3Z6Vector
+	196608	_D3gfm4math5funcs12__T5clampTfZ5clampFNaNbNiNffffZf
+	    1	_D3app8limitFpsFZv
+------------------
+	65536	_D8renderer8renderer8Renderer11renderPixelMFiiZS3gfm4math6vector17__T6VectorTfVii3Z6Vector
+_D3gfm4math10quaternion18__T10QuaternionTfZ10Quaternion23__T8opBinaryHVAyaa1_2aZ8opBinaryMxFNaNbNiNfS3gfm4math6vector17__T6VectorTfVii3Z6VectorZS3gfm4math6vector17__T6VectorTfVii3Z6Vector	65536	66280	38810
+	65536	_D3gfm4math6vector17__T6VectorTfVii4Z6Vector58__T8opAssignTxS3gfm4math6vector17__T6VectorTfVii4Z6VectorZ8opAssignMFNaNbNcNiNjNfxS3gfm4math6vector17__T6VectorTfVii4Z6VectorZS3gfm4math6vector17__T6VectorTfVii4Z6Vector
+------------------
+	196608	_D3app9enterLoopFZv
+_D3gfm4math5funcs12__T5clampTfZ5clampFNaNbNiNffffZf	196608	11961	11961
+------------------
+	127534	_D8renderer8renderer8Renderer9pathTraceMFS3gfm4math6vector17__T6VectorTfVii3Z6VectorS3gfm4math6vector17__T6VectorTfVii3Z6VectoriS3gfm4math6vector17__T6VectorTfVii3Z6VectorS3gfm4math6vector17__T6VectorTfVii3Z6VectorbZS3std8typecons143__T5TupleTS3gfm4math6vector17__T6VectorTfVii3Z6VectorTS3gfm4math6vector17__T6VectorTfVii3Z6VectorTC8renderer7objects11sceneobject11SceneObjectZ5Tuple
+_D3gfm4math6vector17__T6VectorTfVii3Z6Vector10normalizedMxFNaNbNiNfZS3gfm4math6vector17__T6VectorTfVii3Z6Vector	127534	16016	16016
+------------------
+	57254	_D3gfm4math6vector17__T6VectorTfVii3Z6Vector27__T10opOpAssignVAyaa1_2bTfZ10opOpAssignMFNaNbNcNiNjNffZS3gfm4math6vector17__T6VectorTfVii3Z6Vector
+_D3gfm4math6vector17__T6VectorTfVii3Z6Vector15__T8opAssignTfZ8opAssignMFNaNbNcNiNjNffZS3gfm4math6vector17__T6VectorTfVii3Z6Vector	57254	6436	6436
+------------------
+	    5	_Dmain
+_D3gfm4math6vector17__T6VectorTfVii3Z6Vector17__T6__ctorTfTfTfZ6__ctorMFNaNbNcNiNffffZS3gfm4math6vector17__T6VectorTfVii3Z6Vector	5	0	0
+------------------
+	    1	_Dmain
+_D3gfm4math6vector17__T6VectorTfVii3Z6Vector17__T6__ctorTiTfTfZ6__ctorMFNaNbNcNiNfiffZS3gfm4math6vector17__T6VectorTfVii3Z6Vector	1	0	0
+------------------
+	    1	_Dmain
+_D3gfm4math6vector17__T6VectorTfVii3Z6Vector17__T6__ctorTiTfTiZ6__ctorMFNaNbNcNiNfifiZS3gfm4math6vector17__T6VectorTfVii3Z6Vector	1	0	0
+------------------
+	    3	_Dmain
+_D3gfm4math6vector17__T6VectorTfVii3Z6Vector17__T6__ctorTiTiTfZ6__ctorMFNaNbNcNiNfiifZS3gfm4math6vector17__T6VectorTfVii3Z6Vector	3	0	0
+------------------
+	65536	_D8renderer8renderer8Renderer6renderMFiZAS3gfm4math6vector17__T6VectorTfVii3Z6Vector
+_D3gfm4math6vector17__T6VectorTfVii3Z6Vector24__T8opBinaryVAyaa1_2aTfZ8opBinaryMxFNaNbNiNffZS3gfm4math6vector17__T6VectorTfVii3Z6Vector	65536	19051	19051
+------------------
+	63767	_D8renderer8renderer8Renderer9pathTraceMFS3gfm4math6vector17__T6VectorTfVii3Z6VectorS3gfm4math6vector17__T6VectorTfVii3Z6VectoriS3gfm4math6vector17__T6VectorTfVii3Z6VectorS3gfm4math6vector17__T6VectorTfVii3Z6VectorbZS3std8typecons143__T5TupleTS3gfm4math6vector17__T6VectorTfVii3Z6VectorTS3gfm4math6vector17__T6VectorTfVii3Z6VectorTC8renderer7objects11sceneobject11SceneObjectZ5Tuple
+_D3gfm4math6vector17__T6VectorTfVii3Z6Vector24__T8opBinaryVAyaa1_2aTiZ8opBinaryMxFNaNbNiNfiZS3gfm4math6vector17__T6VectorTfVii3Z6Vector	63767	9018	9018
+------------------
+	57254	_D8renderer8renderer8Renderer9pathTraceMFS3gfm4math6vector17__T6VectorTfVii3Z6VectorS3gfm4math6vector17__T6VectorTfVii3Z6VectoriS3gfm4math6vector17__T6VectorTfVii3Z6VectorS3gfm4math6vector17__T6VectorTfVii3Z6VectorbZS3std8typecons143__T5TupleTS3gfm4math6vector17__T6VectorTfVii3Z6VectorTS3gfm4math6vector17__T6VectorTfVii3Z6VectorTC8renderer7objects11sceneobject11SceneObjectZ5Tuple
+_D3gfm4math6vector17__T6VectorTfVii3Z6Vector27__T10opOpAssignVAyaa1_2bTfZ10opOpAssignMFNaNbNcNiNjNffZS3gfm4math6vector17__T6VectorTfVii3Z6Vector	57254	18922	12486
+	57254	_D3gfm4math6vector17__T6VectorTfVii3Z6Vector15__T8opAssignTfZ8opAssignMFNaNbNcNiNjNffZS3gfm4math6vector17__T6VectorTfVii3Z6Vector
+------------------
+	    8	_D8renderer7objects11sceneobject11SceneObject8positionMFS3gfm4math6vector17__T6VectorTfVii3Z6VectorZv
+	    8	_D8renderer7objects11sceneobject11SceneObject5colorMFS3gfm4math6vector17__T6VectorTfVii3Z6VectorZv
+	65537	_Dmain
+	65536	_D8renderer8renderer8Renderer6renderMFiZAS3gfm4math6vector17__T6VectorTfVii3Z6Vector
+	176418	_D8renderer8renderer8Renderer8raymarchMFS3gfm4math6vector17__T6VectorTfVii3Z6VectorS3gfm4math6vector17__T6VectorTfVii3Z6VectorJS3gfm4math6vector17__T6VectorTfVii3Z6VectorJS3gfm4math6vector17__T6VectorTfVii3Z6VectorJC8renderer7objects11sceneobject11SceneObjectZb
+_D3gfm4math6vector17__T6VectorTfVii3Z6Vector57__T8opAssignTS3gfm4math6vector17__T6VectorTfVii3Z6VectorZ8opAssignMFNaNbNcNiNjNfS3gfm4math6vector17__T6VectorTfVii3Z6VectorZS3gfm4math6vector17__T6VectorTfVii3Z6Vector	307507	46026	46026
+------------------
+	63767	_D8renderer8renderer8Renderer9pathTraceMFS3gfm4math6vector17__T6VectorTfVii3Z6VectorS3gfm4math6vector17__T6VectorTfVii3Z6VectoriS3gfm4math6vector17__T6VectorTfVii3Z6VectorS3gfm4math6vector17__T6VectorTfVii3Z6VectorbZS3std8typecons143__T5TupleTS3gfm4math6vector17__T6VectorTfVii3Z6VectorTS3gfm4math6vector17__T6VectorTfVii3Z6VectorTC8renderer7objects11sceneobject11SceneObjectZ5Tuple
+_D3gfm4math6vector17__T6VectorTfVii3Z6Vector66__T8opBinaryVAyaa1_2bTS3gfm4math6vector17__T6VectorTfVii3Z6VectorZ8opBinaryMxFNaNbNiNfS3gfm4math6vector17__T6VectorTfVii3Z6VectorZS3gfm4math6vector17__T6VectorTfVii3Z6Vector	63767	7650	7650
+------------------
+	63767	_D8renderer8renderer8Renderer9pathTraceMFS3gfm4math6vector17__T6VectorTfVii3Z6VectorS3gfm4math6vector17__T6VectorTfVii3Z6VectoriS3gfm4math6vector17__T6VectorTfVii3Z6VectorS3gfm4math6vector17__T6VectorTfVii3Z6VectorbZS3std8typecons143__T5TupleTS3gfm4math6vector17__T6VectorTfVii3Z6VectorTS3gfm4math6vector17__T6VectorTfVii3Z6VectorTC8renderer7objects11sceneobject11SceneObjectZ5Tuple
+_D3gfm4math6vector17__T6VectorTfVii3Z6Vector66__T8opBinaryVAyaa1_2dTS3gfm4math6vector17__T6VectorTfVii3Z6VectorZ8opBinaryMxFNaNbNiNfS3gfm4math6vector17__T6VectorTfVii3Z6VectorZS3gfm4math6vector17__T6VectorTfVii3Z6Vector	63767	6415	6415
+------------------
+	88209	_D8renderer8renderer8Renderer9pathTraceMFS3gfm4math6vector17__T6VectorTfVii3Z6VectorS3gfm4math6vector17__T6VectorTfVii3Z6VectoriS3gfm4math6vector17__T6VectorTfVii3Z6VectorS3gfm4math6vector17__T6VectorTfVii3Z6VectorbZS3std8typecons143__T5TupleTS3gfm4math6vector17__T6VectorTfVii3Z6VectorTS3gfm4math6vector17__T6VectorTfVii3Z6VectorTC8renderer7objects11sceneobject11SceneObjectZ5Tuple
+_D3gfm4math6vector17__T6VectorTfVii3Z6Vector69__T10opOpAssignVAyaa1_2aTS3gfm4math6vector17__T6VectorTfVii3Z6VectorZ10opOpAssignMFNaNbNcNiNjNfS3gfm4math6vector17__T6VectorTfVii3Z6VectorZS3gfm4math6vector17__T6VectorTfVii3Z6Vector	88209	10355	10355
+------------------
+	14170480	_D8renderer8renderer8Renderer8raymarchMFS3gfm4math6vector17__T6VectorTfVii3Z6VectorS3gfm4math6vector17__T6VectorTfVii3Z6VectorJS3gfm4math6vector17__T6VectorTfVii3Z6VectorJS3gfm4math6vector17__T6VectorTfVii3Z6VectorJC8renderer7objects11sceneobject11SceneObjectZb
+	65536	_D8renderer8renderer8Renderer6renderMFiZAS3gfm4math6vector17__T6VectorTfVii3Z6Vector
+	215604	_D8renderer8renderer8Renderer9pathTraceMFS3gfm4math6vector17__T6VectorTfVii3Z6VectorS3gfm4math6vector17__T6VectorTfVii3Z6VectoriS3gfm4math6vector17__T6VectorTfVii3Z6VectorS3gfm4math6vector17__T6VectorTfVii3Z6VectorbZS3std8typecons143__T5TupleTS3gfm4math6vector17__T6VectorTfVii3Z6VectorTS3gfm4math6vector17__T6VectorTfVii3Z6VectorTC8renderer7objects11sceneobject11SceneObjectZ5Tuple
+	65536	_D3app9enterLoopFZv
+_D3gfm4math6vector17__T6VectorTfVii3Z6Vector69__T10opOpAssignVAyaa1_2bTS3gfm4math6vector17__T6VectorTfVii3Z6VectorZ10opOpAssignMFNaNbNcNiNjNfS3gfm4math6vector17__T6VectorTfVii3Z6VectorZS3gfm4math6vector17__T6VectorTfVii3Z6Vector	14517156	806847	806847
+------------------
+	65536	_D3gfm4math10quaternion18__T10QuaternionTfZ10Quaternion23__T8opBinaryHVAyaa1_2aZ8opBinaryMxFNaNbNiNfS3gfm4math6vector17__T6VectorTfVii3Z6VectorZS3gfm4math6vector17__T6VectorTfVii3Z6Vector
+_D3gfm4math6vector17__T6VectorTfVii4Z6Vector58__T8opAssignTxS3gfm4math6vector17__T6VectorTfVii4Z6VectorZ8opAssignMFNaNbNcNiNjNfxS3gfm4math6vector17__T6VectorTfVii4Z6VectorZS3gfm4math6vector17__T6VectorTfVii4Z6Vector	65536	27470	27470
+------------------
+	    6	_D3std12experimental6logger4core6Logger12__T3logTAyaZ3logMFNfxE3std12experimental6logger4core8LogLevelLAyaiAyaAyaAyaAyaZv
+_D3std12experimental6logger4core12__T3logTAyaZ3logFLAyaiAyaAyaAyaAyaZ12__dgliteral7MFNaNiNfZAya	6	168	32
+	    1	_D3app5startFZ12__dgliteral1MFNaNbNiNfZAya
+	    1	_D3app13loadLibrariesFZ12__dgliteral1MFNaNbNiNfZAya
+	    1	_D3app10openWindowFZ12__dgliteral1MFNaNbNiNfZAya
+	    1	_D3app10openWindowFZ12__dgliteral2MFNaNbNiNfZAya
+	    1	_D3app9enterLoopFZ12__dgliteral1MFNaNbNiNfZAya
+	    1	_D3app9enterLoopFZ12__dgliteral3MFNaNfZAya
+------------------
+	    1	_D3app5startFZv
+	    1	_D3app13loadLibrariesFZv
+	    2	_D3app10openWindowFZv
+	    2	_D3app9enterLoopFZv
+_D3std12experimental6logger4core12__T3logTAyaZ3logFNfLAyaiAyaAyaAyaAyaZv	6	13884	59
+	    6	_D3std12experimental6logger4core6Logger12__T3logTAyaZ3logMFNfxE3std12experimental6logger4core8LogLevelLAyaiAyaAyaAyaAyaZv
+------------------
+	   12	_D3std12experimental6logger4core6Logger12__T3logTAyaZ3logMFNfxE3std12experimental6logger4core8LogLevelLAyaiAyaAyaAyaAyaZv
+_D3std12experimental6logger4core22__T16isLoggingEnabledZ16isLoggingEnabledFNaNfE3std12experimental6logger4core8LogLevelE3std12experimental6logger4core8LogLevelE3std12experimental6logger4core8LogLevelLbZb	12	4	3
+	    6	_D3std12experimental6logger4core6Logger12__T3logTAyaZ3logMFxE3std12experimental6logger4core8LogLevelLAyaiAyaAyaAyaAyaZ12__dgliteral8MFNaNbNiNfZb
+------------------
+	    6	_D3std12experimental6logger4core12__T3logTAyaZ3logFNfLAyaiAyaAyaAyaAyaZv
+_D3std12experimental6logger4core6Logger12__T3logTAyaZ3logMFNfxE3std12experimental6logger4core8LogLevelLAyaiAyaAyaAyaAyaZv	6	13825	13332
+	   12	_D3std12experimental6logger4core22__T16isLoggingEnabledZ16isLoggingEnabledFNaNfE3std12experimental6logger4core8LogLevelE3std12experimental6logger4core8LogLevelE3std12experimental6logger4core8LogLevelLbZb
+	    6	_D3std5array17__T8appenderTAyaZ8appenderFNaNbNfZS3std5array17__T8AppenderTAyaZ8Appender
+	    6	_D3std12experimental6logger4core12__T3logTAyaZ3logFLAyaiAyaAyaAyaAyaZ12__dgliteral7MFNaNiNfZAya
+	    6	_D3std6format67__T14formattedWriteTS3std12experimental6logger4core8MsgRangeTaTAyaZ14formattedWriteFNfKS3std12experimental6logger4core8MsgRangexAaAyaZk
+	    6	_D3std5array17__T8AppenderTAyaZ8Appender4dataMNgFNaNbNdNiNeZAya
+	   12	_D3std3utf28__T20canSearchInCodeUnitsTaZ20canSearchInCodeUnitsFNaNbNiNfwZb
+	   24	_D3std9exception27__T7enforceHTC9ExceptionTbZ7enforceFNaNfbLAxaAyakZb
+	    6	_D4core4time8Duration27__T5totalVAyaa5_6d73656373Z5totalMxFNaNbNdNiNfZl
+	   84	_D3std5range10primitives12__T5emptyTaZ5emptyFNaNbNdNiNfxAaZb
+	  114	_D3std9exception45__T9enforceExHTC3std6format15FormatExceptionZ16__T9enforceExTbZ9enforceExFNaNfbLAyaAyakZb
+	   42	_D3std4conv16__T5parseTkTAxaZ5parseFNaNfKAxaZk
+	   42	_D3std9exception45__T9enforceExHTC3std6format15FormatExceptionZ16__T9enforceExTkZ9enforceExFNaNfkLAyaAyakZk
+	   42	_D3std6format20__T12arrayPtrDiffTaZ12arrayPtrDiffFNaNbNiNexAaxAaZi
+	   84	_D3std9algorithm9searching41__T10startsWithVAyaa6_61203d3d2062TAxaTaZ10startsWithFNaNfAxaaZb
+	   42	_D3std4conv9__T2toTiZ10__T2toTxkZ2toFNaNfxkZi
+------------------
+	    6	_D3std12experimental6logger4core22__T16isLoggingEnabledZ16isLoggingEnabledFNaNfE3std12experimental6logger4core8LogLevelE3std12experimental6logger4core8LogLevelE3std12experimental6logger4core8LogLevelLbZb
+_D3std12experimental6logger4core6Logger12__T3logTAyaZ3logMFxE3std12experimental6logger4core8LogLevelLAyaiAyaAyaAyaAyaZ12__dgliteral8MFNaNbNiNfZb	6	1	1
+------------------
+	    2	_D3std6string20__T10stripRightTAyaZ10stripRightFAyaZ14__foreachbody2MFNaNbNiNfKkKwZi
+_D3std3utf18__T10codeLengthTaZ10codeLengthFNaNbNiNfwZh	2	0	0
+------------------
+	   12	_D3std12experimental6logger4core6Logger12__T3logTAyaZ3logMFNfxE3std12experimental6logger4core8LogLevelLAyaiAyaAyaAyaAyaZv
+_D3std3utf28__T20canSearchInCodeUnitsTaZ20canSearchInCodeUnitsFNaNbNiNfwZb	12	0	0
+------------------
+	    2	_D3std6string18__T9stripLeftTAyaZ9stripLeftFNaNfAyaZAya
+_D3std3utf94__T6decodeVE3std8typecons55__T4FlagVAyaa19_7573655265706c6163656d656e744463686172Z4Flagi0TAyaZ6decodeFNaNeKAyaKkZw	2	0	0
+------------------
+	    1	_D3app9enterLoopFZ12__dgliteral3MFNaNfZAya
+_D3std4conv11__T2toTAyaZ9__T2toTiZ2toFNaNbNfiZAya	1	25	0
+	    1	_D3std4conv17__T6toImplTAyaTiZ6toImplFNaNbNeikE3std5ascii10LetterCaseZAya
+------------------
+	    1	_D3app9enterLoopFZ12__dgliteral3MFNaNfZAya
+_D3std4conv11__T2toTAyaZ9__T2toTlZ2toFNaNbNflZAya	1	31	0
+	    1	_D3std4conv17__T6toImplTAyaTlZ6toImplFNaNbNelkE3std5ascii10LetterCaseZAya
+------------------
+	   42	_D3std12experimental6logger4core6Logger12__T3logTAyaZ3logMFNfxE3std12experimental6logger4core8LogLevelLAyaiAyaAyaAyaAyaZv
+_D3std4conv16__T5parseTkTAxaZ5parseFNaNfKAxaZk	42	5	5
+------------------
+	   42	_D3std4conv9__T2toTiZ10__T2toTxkZ2toFNaNfxkZi
+_D3std4conv16__T6toImplTiTxkZ6toImplFNaNfxkZi	42	15	15
+	   42	_D3std9exception14__T7enforceTbZ7enforceFNaNfbLC6object9ThrowableZb
+------------------
+	    1	_D3std4conv11__T2toTAyaZ9__T2toTiZ2toFNaNbNfiZAya
+_D3std4conv17__T6toImplTAyaTiZ6toImplFNaNbNeikE3std5ascii10LetterCaseZAya	1	25	11
+	    1	_D3std4conv47__T7toCharsVii10TaVE3std5ascii10LetterCasei1TiZ7toCharsFNaNbNiNfiZS3std4conv47__T7toCharsVii10TaVE3std5ascii10LetterCasei1TiZ7toCharsFNaNbNiNfiZ6Result
+	    1	_D3std5array96__T5arrayTS3std4conv47__T7toCharsVii10TaVE3std5ascii10LetterCasei1TiZ7toCharsFNaNbNiNfiZ6ResultZ5arrayFNaNbNfS3std4conv47__T7toCharsVii10TaVE3std5ascii10LetterCasei1TiZ7toCharsFNaNbNiNfiZ6ResultZAa
+------------------
+	    1	_D3std4conv11__T2toTAyaZ9__T2toTlZ2toFNaNbNflZAya
+_D3std4conv17__T6toImplTAyaTlZ6toImplFNaNbNelkE3std5ascii10LetterCaseZAya	1	31	18
+	    1	_D3std4conv47__T7toCharsVii10TaVE3std5ascii10LetterCasei1TlZ7toCharsFNaNbNiNflZS3std4conv47__T7toCharsVii10TaVE3std5ascii10LetterCasei1TlZ7toCharsFNaNbNiNflZ6Result
+	    1	_D3std5array96__T5arrayTS3std4conv47__T7toCharsVii10TaVE3std5ascii10LetterCasei1TlZ7toCharsFNaNbNiNflZ6ResultZ5arrayFNaNbNfS3std4conv47__T7toCharsVii10TaVE3std5ascii10LetterCasei1TlZ7toCharsFNaNbNiNflZ6ResultZAa
+------------------
+	    7	_D3std4conv22__T10emplaceRefTaTaTaZ10emplaceRefFNaNbNiNfKaKaZv
+_D3std4conv22__T10emplaceRefTaTaTaZ10emplaceRefFKaKaZ1S6__ctorMFNaNbNcNiNfKaZS3std4conv22__T10emplaceRefTaTaTaZ10emplaceRefFKaKaZ1S	7	0	0
+------------------
+	    7	_D3std4conv22__T10emplaceRefTaTaTaZ10emplaceRefFNaNbNiNfKaKaZv
+_D3std4conv22__T10emplaceRefTaTaTaZ10emplaceRefFKaKaZ9__lambda5MFNaNbNiNeZPS3std4conv22__T10emplaceRefTaTaTaZ10emplaceRefFKaKaZ1S	7	0	0
+------------------
+	    1	_D3std5array96__T5arrayTS3std4conv47__T7toCharsVii10TaVE3std5ascii10LetterCasei1TiZ7toCharsFNaNbNiNfiZ6ResultZ5arrayFNaNbNfS3std4conv47__T7toCharsVii10TaVE3std5ascii10LetterCasei1TiZ7toCharsFNaNbNiNfiZ6ResultZAa
+	    6	_D3std5array96__T5arrayTS3std4conv47__T7toCharsVii10TaVE3std5ascii10LetterCasei1TlZ7toCharsFNaNbNiNflZ6ResultZ5arrayFNaNbNfS3std4conv47__T7toCharsVii10TaVE3std5ascii10LetterCasei1TlZ7toCharsFNaNbNiNflZ6ResultZAa
+_D3std4conv22__T10emplaceRefTaTaTaZ10emplaceRefFNaNbNiNfKaKaZv	7	1	1
+	    7	_D3std4conv22__T10emplaceRefTaTaTaZ10emplaceRefFKaKaZ9__lambda5MFNaNbNiNeZPS3std4conv22__T10emplaceRefTaTaTaZ10emplaceRefFKaKaZ1S
+	    7	_D3std4conv22__T10emplaceRefTaTaTaZ10emplaceRefFKaKaZ1S6__ctorMFNaNbNcNiNfKaZS3std4conv22__T10emplaceRefTaTaTaZ10emplaceRefFKaKaZ1S
+------------------
+	    2	_D3std4conv28__T10emplaceRefTAyaTAyaTAyaZ10emplaceRefFNaNbNiNfKAyaKAyaZv
+_D3std4conv28__T10emplaceRefTAyaTAyaTAyaZ10emplaceRefFKAyaKAyaZ1S6__ctorMFNaNbNcNiNfKAyaZS3std4conv28__T10emplaceRefTAyaTAyaTAyaZ10emplaceRefFKAyaKAyaZ1S	2	0	0
+------------------
+	    2	_D3std4conv28__T10emplaceRefTAyaTAyaTAyaZ10emplaceRefFNaNbNiNfKAyaKAyaZv
+_D3std4conv28__T10emplaceRefTAyaTAyaTAyaZ10emplaceRefFKAyaKAyaZ9__lambda5MFNaNbNiNeZPS3std4conv28__T10emplaceRefTAyaTAyaTAyaZ10emplaceRefFKAyaKAyaZ1S	2	0	0
+------------------
+	    2	_D3std5array18__T8AppenderTAAyaZ8Appender12__T3putTAyaZ3putMFNaNbNfAyaZv
+_D3std4conv28__T10emplaceRefTAyaTAyaTAyaZ10emplaceRefFNaNbNiNfKAyaKAyaZv	2	0	0
+	    2	_D3std4conv28__T10emplaceRefTAyaTAyaTAyaZ10emplaceRefFKAyaKAyaZ9__lambda5MFNaNbNiNeZPS3std4conv28__T10emplaceRefTAyaTAyaTAyaZ10emplaceRefFKAyaKAyaZ1S
+	    2	_D3std4conv28__T10emplaceRefTAyaTAyaTAyaZ10emplaceRefFKAyaKAyaZ1S6__ctorMFNaNbNcNiNfKAyaZS3std4conv28__T10emplaceRefTAyaTAyaTAyaZ10emplaceRefFKAyaKAyaZ1S
+------------------
+	    1	_D3std4conv47__T7toCharsVii10TaVE3std5ascii10LetterCasei1TiZ7toCharsFNaNbNiNfiZS3std4conv47__T7toCharsVii10TaVE3std5ascii10LetterCasei1TiZ7toCharsFNaNbNiNfiZ6Result
+_D3std4conv47__T7toCharsVii10TaVE3std5ascii10LetterCasei1TiZ7toCharsFNaNbNiNfiZ6Result10initializeMFNaNbNiNfiZv	1	0	0
+------------------
+	    1	_D3std4conv17__T6toImplTAyaTiZ6toImplFNaNbNeikE3std5ascii10LetterCaseZAya
+_D3std4conv47__T7toCharsVii10TaVE3std5ascii10LetterCasei1TiZ7toCharsFNaNbNiNfiZS3std4conv47__T7toCharsVii10TaVE3std5ascii10LetterCasei1TiZ7toCharsFNaNbNiNfiZ6Result	1	1	1
+	    1	_D3std4conv47__T7toCharsVii10TaVE3std5ascii10LetterCasei1TiZ7toCharsFNaNbNiNfiZ6Result10initializeMFNaNbNiNfiZv
+------------------
+	    1	_D3std4conv47__T7toCharsVii10TaVE3std5ascii10LetterCasei1TlZ7toCharsFNaNbNiNflZS3std4conv47__T7toCharsVii10TaVE3std5ascii10LetterCasei1TlZ7toCharsFNaNbNiNflZ6Result
+_D3std4conv47__T7toCharsVii10TaVE3std5ascii10LetterCasei1TlZ7toCharsFNaNbNiNflZ6Result10initializeMFNaNbNiNflZv	1	3	3
+------------------
+	    1	_D3std4conv17__T6toImplTAyaTlZ6toImplFNaNbNelkE3std5ascii10LetterCaseZAya
+_D3std4conv47__T7toCharsVii10TaVE3std5ascii10LetterCasei1TlZ7toCharsFNaNbNiNflZS3std4conv47__T7toCharsVii10TaVE3std5ascii10LetterCasei1TlZ7toCharsFNaNbNiNflZ6Result	1	3	0
+	    1	_D3std4conv47__T7toCharsVii10TaVE3std5ascii10LetterCasei1TlZ7toCharsFNaNbNiNflZ6Result10initializeMFNaNbNiNflZv
+------------------
+	   42	_D3std12experimental6logger4core6Logger12__T3logTAyaZ3logMFNfxE3std12experimental6logger4core8LogLevelLAyaiAyaAyaAyaAyaZv
+_D3std4conv9__T2toTiZ10__T2toTxkZ2toFNaNfxkZi	42	30	15
+	   42	_D3std4conv16__T6toImplTiTxkZ6toImplFNaNfxkZi
+------------------
+	    2	_D3app13loadLibrariesFZv
+_D3std5array102__T5arrayTS3std9algorithm9iteration40__T8splitterVAyaa6_61203d3d2062TAyaTAyaZ8splitterFAyaAyaZ6ResultZ5arrayFNaNbNfS3std9algorithm9iteration40__T8splitterVAyaa6_61203d3d2062TAyaTAyaZ8splitterFAyaAyaZ6ResultZAAya	2	118	42
+	    2	_D3std5array18__T8AppenderTAAyaZ8Appender6__ctorMFNaNbNcNeAAyaZS3std5array18__T8AppenderTAAyaZ8Appender
+	    2	_D3std9algorithm9iteration40__T8splitterVAyaa6_61203d3d2062TAyaTAyaZ8splitterFAyaAyaZ6Result17ensureFrontLengthMFNaNbNiNfZv
+	    2	_D3std5array18__T8AppenderTAAyaZ8Appender12__T3putTAyaZ3putMFNaNbNfAyaZv
+	    2	_D3std9algorithm9iteration40__T8splitterVAyaa6_61203d3d2062TAyaTAyaZ8splitterFAyaAyaZ6Result8popFrontMFNaNbNiNfZv
+------------------
+	   12	_D3std5array17__T8AppenderTAyaZ8Appender12__T3putTAxaZ3putMFNaNbNfAxaZv
+_D3std5array17__T8AppenderTAyaZ8Appender12__T3putTAxaZ3putMFAxaZ10bigDataFunMFNaNbNekZAa	12	28	15
+	   12	_D3std5array17__T8AppenderTAyaZ8Appender13ensureAddableMFNaNbNekZv
+------------------
+	    6	_D3std6format18__T10FormatSpecTaZ10FormatSpec64__T17writeUpToNextSpecTS3std12experimental6logger4core8MsgRangeZ17writeUpToNextSpecMFNfKS3std12experimental6logger4core8MsgRangeZb
+	    6	_D3std6format64__T11formatRangeTS3std12experimental6logger4core8MsgRangeTAyaTaZ11formatRangeFNfKS3std12experimental6logger4core8MsgRangeKAyaKxS3std6format18__T10FormatSpecTaZ10FormatSpecZv
+_D3std5array17__T8AppenderTAyaZ8Appender12__T3putTAxaZ3putMFNaNbNfAxaZv	12	33	5
+	   12	_D3std5array17__T8AppenderTAyaZ8Appender12__T3putTAxaZ3putMFAxaZ10bigDataFunMFNaNbNekZAa
+------------------
+	   12	_D3std5array17__T8AppenderTAyaZ8Appender12__T3putTAxaZ3putMFAxaZ10bigDataFunMFNaNbNekZAa
+_D3std5array17__T8AppenderTAyaZ8Appender13ensureAddableMFNaNbNekZv	12	13	13
+	    6	_D3std5array29__T19appenderNewCapacityVki1Z19appenderNewCapacityFNaNbNiNfkkZk
+------------------
+	    6	_D3std12experimental6logger4core6Logger12__T3logTAyaZ3logMFNfxE3std12experimental6logger4core8LogLevelLAyaiAyaAyaAyaAyaZv
+_D3std5array17__T8AppenderTAyaZ8Appender4dataMNgFNaNbNdNiNeZAya	6	0	0
+------------------
+	    6	_D3std5array17__T8appenderTAyaZ8appenderFNaNbNfZS3std5array17__T8AppenderTAyaZ8Appender
+_D3std5array17__T8AppenderTAyaZ8Appender6__ctorMFNaNbNcNeAyaZS3std5array17__T8AppenderTAyaZ8Appender	6	103	103
+------------------
+	    6	_D3std12experimental6logger4core6Logger12__T3logTAyaZ3logMFNfxE3std12experimental6logger4core8LogLevelLAyaiAyaAyaAyaAyaZv
+_D3std5array17__T8appenderTAyaZ8appenderFNaNbNfZS3std5array17__T8AppenderTAyaZ8Appender	6	130	27
+	    6	_D3std5array17__T8AppenderTAyaZ8Appender6__ctorMFNaNbNcNeAyaZS3std5array17__T8AppenderTAyaZ8Appender
+------------------
+	    2	_D3std5array18__T8AppenderTAAyaZ8Appender12__T3putTAyaZ3putMFNaNbNfAyaZv
+_D3std5array18__T8AppenderTAAyaZ8Appender12__T3putTAyaZ3putMFAyaZ9__lambda2MFNaNbNiNeZAAya	2	0	0
+------------------
+	    2	_D3std5array102__T5arrayTS3std9algorithm9iteration40__T8splitterVAyaa6_61203d3d2062TAyaTAyaZ8splitterFAyaAyaZ6ResultZ5arrayFNaNbNfS3std9algorithm9iteration40__T8splitterVAyaa6_61203d3d2062TAyaTAyaZ8splitterFAyaAyaZ6ResultZAAya
+_D3std5array18__T8AppenderTAAyaZ8Appender12__T3putTAyaZ3putMFNaNbNfAyaZv	2	27	13
+	    2	_D3std5array18__T8AppenderTAAyaZ8Appender13ensureAddableMFNaNbNekZv
+	    2	_D3std5array18__T8AppenderTAAyaZ8Appender12__T3putTAyaZ3putMFAyaZ9__lambda2MFNaNbNiNeZAAya
+	    2	_D3std4conv28__T10emplaceRefTAyaTAyaTAyaZ10emplaceRefFNaNbNiNfKAyaKAyaZv
+------------------
+	    2	_D3std5array18__T8AppenderTAAyaZ8Appender12__T3putTAyaZ3putMFNaNbNfAyaZv
+_D3std5array18__T8AppenderTAAyaZ8Appender13ensureAddableMFNaNbNekZv	2	14	14
+	    2	_D3std5array29__T19appenderNewCapacityVki8Z19appenderNewCapacityFNaNbNiNfkkZk
+------------------
+	    2	_D3std5array102__T5arrayTS3std9algorithm9iteration40__T8splitterVAyaa6_61203d3d2062TAyaTAyaZ8splitterFAyaAyaZ6ResultZ5arrayFNaNbNfS3std9algorithm9iteration40__T8splitterVAyaa6_61203d3d2062TAyaTAyaZ8splitterFAyaAyaZ6ResultZAAya
+_D3std5array18__T8AppenderTAAyaZ8Appender6__ctorMFNaNbNcNeAAyaZS3std5array18__T8AppenderTAAyaZ8Appender	2	46	46
+------------------
+	    1	_D3std5array96__T5arrayTS3std4conv47__T7toCharsVii10TaVE3std5ascii10LetterCasei1TiZ7toCharsFNaNbNiNfiZ6ResultZ5arrayFS3std4conv47__T7toCharsVii10TaVE3std5ascii10LetterCasei1TiZ7toCharsFNaNbNiNfiZ6ResultZ9__lambda2MFNaNbNeZAa
+	    1	_D3std5array96__T5arrayTS3std4conv47__T7toCharsVii10TaVE3std5ascii10LetterCasei1TlZ7toCharsFNaNbNiNflZ6ResultZ5arrayFS3std4conv47__T7toCharsVii10TaVE3std5ascii10LetterCasei1TlZ7toCharsFNaNbNiNflZ6ResultZ9__lambda2MFNaNbNeZAa
+_D3std5array29__T18uninitializedArrayTAaTkZ18uninitializedArrayFNaNbNekZAa	2	3	3
+------------------
+	    6	_D3std5array17__T8AppenderTAyaZ8Appender13ensureAddableMFNaNbNekZv
+_D3std5array29__T19appenderNewCapacityVki1Z19appenderNewCapacityFNaNbNiNfkkZk	6	0	0
+------------------
+	    2	_D3std5array18__T8AppenderTAAyaZ8Appender13ensureAddableMFNaNbNekZv
+_D3std5array29__T19appenderNewCapacityVki8Z19appenderNewCapacityFNaNbNiNfkkZk	2	0	0
+------------------
+	    1	_D3std4conv17__T6toImplTAyaTiZ6toImplFNaNbNeikE3std5ascii10LetterCaseZAya
+_D3std5array96__T5arrayTS3std4conv47__T7toCharsVii10TaVE3std5ascii10LetterCasei1TiZ7toCharsFNaNbNiNfiZ6ResultZ5arrayFNaNbNfS3std4conv47__T7toCharsVii10TaVE3std5ascii10LetterCasei1TiZ7toCharsFNaNbNiNfiZ6ResultZAa	1	13	10
+	    1	_D3std5array96__T5arrayTS3std4conv47__T7toCharsVii10TaVE3std5ascii10LetterCasei1TiZ7toCharsFNaNbNiNfiZ6ResultZ5arrayFS3std4conv47__T7toCharsVii10TaVE3std5ascii10LetterCasei1TiZ7toCharsFNaNbNiNfiZ6ResultZ9__lambda2MFNaNbNeZAa
+	    1	_D3std4conv22__T10emplaceRefTaTaTaZ10emplaceRefFNaNbNiNfKaKaZv
+	    1	_D3std5array96__T5arrayTS3std4conv47__T7toCharsVii10TaVE3std5ascii10LetterCasei1TiZ7toCharsFNaNbNiNfiZ6ResultZ5arrayFS3std4conv47__T7toCharsVii10TaVE3std5ascii10LetterCasei1TiZ7toCharsFNaNbNiNfiZ6ResultZ9__lambda3MFNaNbNiNeZAa
+------------------
+	    1	_D3std5array96__T5arrayTS3std4conv47__T7toCharsVii10TaVE3std5ascii10LetterCasei1TiZ7toCharsFNaNbNiNfiZ6ResultZ5arrayFNaNbNfS3std4conv47__T7toCharsVii10TaVE3std5ascii10LetterCasei1TiZ7toCharsFNaNbNiNfiZ6ResultZAa
+_D3std5array96__T5arrayTS3std4conv47__T7toCharsVii10TaVE3std5ascii10LetterCasei1TiZ7toCharsFNaNbNiNfiZ6ResultZ5arrayFS3std4conv47__T7toCharsVii10TaVE3std5ascii10LetterCasei1TiZ7toCharsFNaNbNiNfiZ6ResultZ9__lambda2MFNaNbNeZAa	1	3	0
+	    1	_D3std5array29__T18uninitializedArrayTAaTkZ18uninitializedArrayFNaNbNekZAa
+------------------
+	    1	_D3std5array96__T5arrayTS3std4conv47__T7toCharsVii10TaVE3std5ascii10LetterCasei1TiZ7toCharsFNaNbNiNfiZ6ResultZ5arrayFNaNbNfS3std4conv47__T7toCharsVii10TaVE3std5ascii10LetterCasei1TiZ7toCharsFNaNbNiNfiZ6ResultZAa
+_D3std5array96__T5arrayTS3std4conv47__T7toCharsVii10TaVE3std5ascii10LetterCasei1TiZ7toCharsFNaNbNiNfiZ6ResultZ5arrayFS3std4conv47__T7toCharsVii10TaVE3std5ascii10LetterCasei1TiZ7toCharsFNaNbNiNfiZ6ResultZ9__lambda3MFNaNbNiNeZAa	1	0	0
+------------------
+	    1	_D3std4conv17__T6toImplTAyaTlZ6toImplFNaNbNelkE3std5ascii10LetterCaseZAya
+_D3std5array96__T5arrayTS3std4conv47__T7toCharsVii10TaVE3std5ascii10LetterCasei1TlZ7toCharsFNaNbNiNflZ6ResultZ5arrayFNaNbNfS3std4conv47__T7toCharsVii10TaVE3std5ascii10LetterCasei1TlZ7toCharsFNaNbNiNflZ6ResultZAa	1	10	8
+	    1	_D3std5array96__T5arrayTS3std4conv47__T7toCharsVii10TaVE3std5ascii10LetterCasei1TlZ7toCharsFNaNbNiNflZ6ResultZ5arrayFS3std4conv47__T7toCharsVii10TaVE3std5ascii10LetterCasei1TlZ7toCharsFNaNbNiNflZ6ResultZ9__lambda2MFNaNbNeZAa
+	    6	_D3std4conv22__T10emplaceRefTaTaTaZ10emplaceRefFNaNbNiNfKaKaZv
+	    1	_D3std5array96__T5arrayTS3std4conv47__T7toCharsVii10TaVE3std5ascii10LetterCasei1TlZ7toCharsFNaNbNiNflZ6ResultZ5arrayFS3std4conv47__T7toCharsVii10TaVE3std5ascii10LetterCasei1TlZ7toCharsFNaNbNiNflZ6ResultZ9__lambda3MFNaNbNiNeZAa
+------------------
+	    1	_D3std5array96__T5arrayTS3std4conv47__T7toCharsVii10TaVE3std5ascii10LetterCasei1TlZ7toCharsFNaNbNiNflZ6ResultZ5arrayFNaNbNfS3std4conv47__T7toCharsVii10TaVE3std5ascii10LetterCasei1TlZ7toCharsFNaNbNiNflZ6ResultZAa
+_D3std5array96__T5arrayTS3std4conv47__T7toCharsVii10TaVE3std5ascii10LetterCasei1TlZ7toCharsFNaNbNiNflZ6ResultZ5arrayFS3std4conv47__T7toCharsVii10TaVE3std5ascii10LetterCasei1TlZ7toCharsFNaNbNiNflZ6ResultZ9__lambda2MFNaNbNeZAa	1	0	0
+	    1	_D3std5array29__T18uninitializedArrayTAaTkZ18uninitializedArrayFNaNbNekZAa
+------------------
+	    1	_D3std5array96__T5arrayTS3std4conv47__T7toCharsVii10TaVE3std5ascii10LetterCasei1TlZ7toCharsFNaNbNiNflZ6ResultZ5arrayFNaNbNfS3std4conv47__T7toCharsVii10TaVE3std5ascii10LetterCasei1TlZ7toCharsFNaNbNiNflZ6ResultZAa
+_D3std5array96__T5arrayTS3std4conv47__T7toCharsVii10TaVE3std5ascii10LetterCasei1TlZ7toCharsFNaNbNiNflZ6ResultZ5arrayFS3std4conv47__T7toCharsVii10TaVE3std5ascii10LetterCasei1TlZ7toCharsFNaNbNiNflZ6ResultZ9__lambda3MFNaNbNiNeZAa	1	1	1
+------------------
+	   84	_D3std12experimental6logger4core6Logger12__T3logTAyaZ3logMFNfxE3std12experimental6logger4core8LogLevelLAyaiAyaAyaAyaAyaZv
+	    2	_D8derelict4util9sharedlib9SharedLib4loadMFAAyaZv
+	  789	_D8derelict4util9sharedlib9SharedLib10loadSymbolMFAyabZPv
+	    1	_D3app10openWindowFZv
+_D3std5range10primitives12__T5emptyTaZ5emptyFNaNbNdNiNfxAaZb	876	49	49
+------------------
+	   12	_D3std6format67__T14formattedWriteTS3std12experimental6logger4core8MsgRangeTaTAyaZ14formattedWriteFNfKS3std12experimental6logger4core8MsgRangexAaAyaZk
+_D3std6format18__T10FormatSpecTaZ10FormatSpec64__T17writeUpToNextSpecTS3std12experimental6logger4core8MsgRangeZ17writeUpToNextSpecMFNfKS3std12experimental6logger4core8MsgRangeZb	12	66	45
+	    6	_D3std5array17__T8AppenderTAyaZ8Appender12__T3putTAxaZ3putMFNaNbNfAxaZv
+	    6	_D3std9exception45__T9enforceExHTC3std6format15FormatExceptionZ16__T9enforceExTbZ9enforceExFNaNfbLAyaAyakZb
+------------------
+	   42	_D3std12experimental6logger4core6Logger12__T3logTAyaZ3logMFNfxE3std12experimental6logger4core8LogLevelLAyaiAyaAyaAyaAyaZv
+_D3std6format20__T12arrayPtrDiffTaZ12arrayPtrDiffFNaNbNiNexAaxAaZi	42	4	4
+------------------
+	    6	_D3std6format67__T14formattedWriteTS3std12experimental6logger4core8MsgRangeTaTAyaZ14formattedWriteFNfKS3std12experimental6logger4core8MsgRangexAaAyaZk
+_D3std6format64__T11formatRangeTS3std12experimental6logger4core8MsgRangeTAyaTaZ11formatRangeFNfKS3std12experimental6logger4core8MsgRangeKAyaKxS3std6format18__T10FormatSpecTaZ10FormatSpecZv	6	29	16
+	    6	_D3std5array17__T8AppenderTAyaZ8Appender12__T3putTAxaZ3putMFNaNbNfAxaZv
+------------------
+	    6	_D3std12experimental6logger4core6Logger12__T3logTAyaZ3logMFNfxE3std12experimental6logger4core8LogLevelLAyaiAyaAyaAyaAyaZv
+_D3std6format67__T14formattedWriteTS3std12experimental6logger4core8MsgRangeTaTAyaZ14formattedWriteFNfKS3std12experimental6logger4core8MsgRangexAaAyaZk	6	122	27
+	   12	_D3std6format18__T10FormatSpecTaZ10FormatSpec64__T17writeUpToNextSpecTS3std12experimental6logger4core8MsgRangeZ17writeUpToNextSpecMFNfKS3std12experimental6logger4core8MsgRangeZb
+	    6	_D3std6format64__T11formatRangeTS3std12experimental6logger4core8MsgRangeTAyaTaZ11formatRangeFNfKS3std12experimental6logger4core8MsgRangeKAyaKxS3std6format18__T10FormatSpecTaZ10FormatSpecZv
+------------------
+	131072	_D8renderer8renderer8Renderer11renderPixelMFiiZS3gfm4math6vector17__T6VectorTfVii3Z6Vector
+	191301	_D8renderer8renderer8Renderer22getRandomHemisphereDirMFS3gfm4math6vector17__T6VectorTfVii3Z6VectorZS3gfm4math6vector17__T6VectorTfVii3Z6Vector
+_D3std6random201__T7uniformVAyaa2_5b29TfTfTS3std6random135__T21MersenneTwisterEngineTkVki32Vki624Vki397Vki31Vki2567483615Vki11Vki4294967295Vki7Vki2636928640Vki15Vki4022730752Vki18Vki1812433253Z21MersenneTwisterEngineZ7uniformFNfffKS3std6random135__T21MersenneTwisterEngineTkVki32Vki624Vki397Vki31Vki2567483615Vki11Vki4294967295Vki7Vki2636928640Vki15Vki4022730752Vki18Vki1812433253Z21MersenneTwisterEngineZf	322373	108575	87200
+	322373	_D3std9exception27__T7enforceHTC9ExceptionTbZ7enforceFNaNfbLAxaAyakZb
+------------------
+	    2	_D3app13loadLibrariesFZv
+_D3std6string18__T9stripLeftTAyaZ9stripLeftFNaNfAyaZAya	2	18	18
+	    2	_D3std3utf94__T6decodeVE3std8typecons55__T4FlagVAyaa19_7573655265706c6163656d656e744463686172Z4Flagi0TAyaZ6decodeFNaNeKAyaKkZw
+------------------
+	    2	_D3std6string20__T10stripRightTAyaZ10stripRightFNaNiNfAyaZAya
+_D3std6string20__T10stripRightTAyaZ10stripRightFAyaZ14__foreachbody2MFNaNbNiNfKkKwZi	2	12	12
+	    2	_D3std3utf18__T10codeLengthTaZ10codeLengthFNaNbNiNfwZh
+------------------
+	    2	_D3app13loadLibrariesFZv
+_D3std6string20__T10stripRightTAyaZ10stripRightFNaNiNfAyaZAya	2	12	0
+	    2	_D3std6string20__T10stripRightTAyaZ10stripRightFAyaZ14__foreachbody2MFNaNbNiNfKkKwZi
+------------------
+	    2	_D3std5array102__T5arrayTS3std9algorithm9iteration40__T8splitterVAyaa6_61203d3d2062TAyaTAyaZ8splitterFAyaAyaZ6ResultZ5arrayFNaNbNfS3std9algorithm9iteration40__T8splitterVAyaa6_61203d3d2062TAyaTAyaZ8splitterFAyaAyaZ6ResultZAAya
+	    2	_D3std9algorithm9iteration40__T8splitterVAyaa6_61203d3d2062TAyaTAyaZ8splitterFAyaAyaZ6Result8popFrontMFNaNbNiNfZv
+_D3std9algorithm9iteration40__T8splitterVAyaa6_61203d3d2062TAyaTAyaZ8splitterFAyaAyaZ6Result17ensureFrontLengthMFNaNbNiNfZv	4	3	1
+	    2	_D3std9algorithm9searching36__T4findVAyaa6_61203d3d2062TAyaTAyaZ4findFNaNbNiNfAyaMAyaZAya
+------------------
+	    2	_D3std5array102__T5arrayTS3std9algorithm9iteration40__T8splitterVAyaa6_61203d3d2062TAyaTAyaZ8splitterFAyaAyaZ6ResultZ5arrayFNaNbNfS3std9algorithm9iteration40__T8splitterVAyaa6_61203d3d2062TAyaTAyaZ8splitterFAyaAyaZ6ResultZAAya
+_D3std9algorithm9iteration40__T8splitterVAyaa6_61203d3d2062TAyaTAyaZ8splitterFAyaAyaZ6Result8popFrontMFNaNbNiNfZv	2	0	0
+	    2	_D3std9algorithm9iteration40__T8splitterVAyaa6_61203d3d2062TAyaTAyaZ8splitterFAyaAyaZ6Result17ensureFrontLengthMFNaNbNiNfZv
+------------------
+	    2	_D3app13loadLibrariesFZv
+_D3std9algorithm9iteration40__T8splitterVAyaa6_61203d3d2062TAyaTAyaZ8splitterFNaNbNiNfAyaAyaZS3std9algorithm9iteration40__T8splitterVAyaa6_61203d3d2062TAyaTAyaZ8splitterFAyaAyaZ6Result	2	14	14
+------------------
+	    2	_D3std9algorithm9searching36__T4findVAyaa6_61203d3d2062TAyaTAyaZ4findFNaNbNiNfAyaMAyaZAya
+_D3std9algorithm9searching34__T4findVAyaa6_61203d3d2062TAhTAhZ4findFNaNbNiNfAhMAhZAh	2	1	1
+------------------
+	    2	_D3std9algorithm9iteration40__T8splitterVAyaa6_61203d3d2062TAyaTAyaZ8splitterFAyaAyaZ6Result17ensureFrontLengthMFNaNbNiNfZv
+_D3std9algorithm9searching36__T4findVAyaa6_61203d3d2062TAyaTAyaZ4findFNaNbNiNfAyaMAyaZAya	2	2	1
+	    2	_D3std9algorithm9searching34__T4findVAyaa6_61203d3d2062TAhTAhZ4findFNaNbNiNfAhMAhZAh
+------------------
+	   84	_D3std12experimental6logger4core6Logger12__T3logTAyaZ3logMFNfxE3std12experimental6logger4core8LogLevelLAyaiAyaAyaAyaAyaZv
+_D3std9algorithm9searching41__T10startsWithVAyaa6_61203d3d2062TAxaTaZ10startsWithFNaNfAxaaZb	84	4	4
+------------------
+	   42	_D3std4conv16__T6toImplTiTxkZ6toImplFNaNfxkZi
+_D3std9exception14__T7enforceTbZ7enforceFNaNfbLC6object9ThrowableZb	42	0	0
+------------------
+	   24	_D3std12experimental6logger4core6Logger12__T3logTAyaZ3logMFNfxE3std12experimental6logger4core8LogLevelLAyaiAyaAyaAyaAyaZv
+	322373	_D3std6random201__T7uniformVAyaa2_5b29TfTfTS3std6random135__T21MersenneTwisterEngineTkVki32Vki624Vki397Vki31Vki2567483615Vki11Vki4294967295Vki7Vki2636928640Vki15Vki4022730752Vki18Vki1812433253Z21MersenneTwisterEngineZ7uniformFNfffKS3std6random135__T21MersenneTwisterEngineTkVki32Vki624Vki397Vki31Vki2567483615Vki11Vki4294967295Vki7Vki2636928640Vki15Vki4022730752Vki18Vki1812433253Z21MersenneTwisterEngineZf
+_D3std9exception27__T7enforceHTC9ExceptionTbZ7enforceFNaNfbLAxaAyakZb	322397	21377	21377
+------------------
+	    1	_D8renderer8renderer8Renderer11renderPixelMFiiZS3gfm4math6vector17__T6VectorTfVii3Z6Vector
+_D3std9exception27__T7enforceHTC9ExceptionTkZ7enforceFNaNfkLAxaAyakZk	1	0	0
+------------------
+	    6	_D3std6format18__T10FormatSpecTaZ10FormatSpec64__T17writeUpToNextSpecTS3std12experimental6logger4core8MsgRangeZ17writeUpToNextSpecMFNfKS3std12experimental6logger4core8MsgRangeZb
+	  114	_D3std12experimental6logger4core6Logger12__T3logTAyaZ3logMFNfxE3std12experimental6logger4core8LogLevelLAyaiAyaAyaAyaAyaZv
+_D3std9exception45__T9enforceExHTC3std6format15FormatExceptionZ16__T9enforceExTbZ9enforceExFNaNfbLAyaAyakZb	120	6	6
+------------------
+	   42	_D3std12experimental6logger4core6Logger12__T3logTAyaZ3logMFNfxE3std12experimental6logger4core8LogLevelLAyaiAyaAyaAyaAyaZv
+_D3std9exception45__T9enforceExHTC3std6format15FormatExceptionZ16__T9enforceExTkZ9enforceExFNaNfkLAyaAyakZk	42	1	1
+------------------
+	    6	_D3std12experimental6logger4core6Logger12__T3logTAyaZ3logMFNfxE3std12experimental6logger4core8LogLevelLAyaiAyaAyaAyaAyaZv
+_D4core4time8Duration27__T5totalVAyaa5_6d73656373Z5totalMxFNaNbNdNiNfZl	6	0	0
+------------------
+	    1	_D3app13loadLibrariesFZv
+_D8derelict4sdl23sdl18DerelictSDL2Loader11loadSymbolsMFZv	1	827	140
+	  437	_D8derelict4util6loader15SharedLibLoader10loadSymbolMFAyabZPv
+------------------
+	    1	_D8derelict4sdl23sdl18_sharedStaticCtor4FZv
+_D8derelict4sdl23sdl18DerelictSDL2Loader6__ctorMFZC8derelict4sdl23sdl18DerelictSDL2Loader	1	0	0
+	    1	_D8derelict4util6loader15SharedLibLoader6__ctorMFAyaZC8derelict4util6loader15SharedLibLoader
+------------------
+_D8derelict4sdl23sdl18_sharedStaticCtor4FZv	0	17	17
+	    1	_D8derelict4sdl23sdl18DerelictSDL2Loader6__ctorMFZC8derelict4sdl23sdl18DerelictSDL2Loader
+------------------
+_D8derelict4sdl23ttf18_sharedStaticCtor5FZv	0	1	1
+	    1	_D8derelict4sdl23ttf21DerelictSDL2ttfLoader6__ctorMFZC8derelict4sdl23ttf21DerelictSDL2ttfLoader
+------------------
+	    1	_D8derelict4sdl23ttf18_sharedStaticCtor5FZv
+_D8derelict4sdl23ttf21DerelictSDL2ttfLoader6__ctorMFZC8derelict4sdl23ttf21DerelictSDL2ttfLoader	1	0	0
+	    1	_D8derelict4util6loader15SharedLibLoader6__ctorMFAyaZC8derelict4util6loader15SharedLibLoader
+------------------
+_D8derelict4sdl25image18_sharedStaticCtor1FZv	0	16	16
+	    1	_D8derelict4sdl25image23DerelictSDL2ImageLoader6__ctorMFZC8derelict4sdl25image23DerelictSDL2ImageLoader
+------------------
+	    1	_D8derelict4sdl25image18_sharedStaticCtor1FZv
+_D8derelict4sdl25image23DerelictSDL2ImageLoader6__ctorMFZC8derelict4sdl25image23DerelictSDL2ImageLoader	1	0	0
+	    1	_D8derelict4util6loader15SharedLibLoader6__ctorMFAyaZC8derelict4util6loader15SharedLibLoader
+------------------
+_D8derelict4sdl25mixer18_sharedStaticCtor2FZv	0	2	1
+	    1	_D8derelict4sdl25mixer23DerelictSDL2MixerLoader6__ctorMFZC8derelict4sdl25mixer23DerelictSDL2MixerLoader
+------------------
+	    1	_D8derelict4sdl25mixer18_sharedStaticCtor2FZv
+_D8derelict4sdl25mixer23DerelictSDL2MixerLoader6__ctorMFZC8derelict4sdl25mixer23DerelictSDL2MixerLoader	1	1	1
+	    1	_D8derelict4util6loader15SharedLibLoader6__ctorMFAyaZC8derelict4util6loader15SharedLibLoader
+------------------
+	  437	_D8derelict4sdl23sdl18DerelictSDL2Loader11loadSymbolsMFZv
+	   61	_D8derelict7opengl33gl317DerelictGL3Loader11loadSymbolsMFZv
+	   16	_D8derelict4util6loader15SharedLibLoader8bindFuncMFPPvAyabZv
+	  275	_D8derelict7opengl32gl16DerelictGLLoader11loadSymbolsMFZv
+_D8derelict4util6loader15SharedLibLoader10loadSymbolMFAyabZPv	789	1048	75
+	  789	_D8derelict4util9sharedlib9SharedLib10loadSymbolMFAyabZPv
+------------------
+	    1	_D8derelict7assimp36assimp21DerelictASSIMP3Loader6__ctorMFZC8derelict7assimp36assimp21DerelictASSIMP3Loader
+	    1	_D8derelict9freeimage9freeimage16DerelictFILoader6__ctorMFZC8derelict9freeimage9freeimage16DerelictFILoader
+	    2	_D8derelict7opengl33gl317DerelictGL3Loader6__ctorMFZC8derelict7opengl33gl317DerelictGL3Loader
+	    1	_D8derelict4sdl23sdl18DerelictSDL2Loader6__ctorMFZC8derelict4sdl23sdl18DerelictSDL2Loader
+	    1	_D8derelict4sdl25image23DerelictSDL2ImageLoader6__ctorMFZC8derelict4sdl25image23DerelictSDL2ImageLoader
+	    1	_D8derelict4sdl25mixer23DerelictSDL2MixerLoader6__ctorMFZC8derelict4sdl25mixer23DerelictSDL2MixerLoader
+	    1	_D8derelict4sdl23ttf21DerelictSDL2ttfLoader6__ctorMFZC8derelict4sdl23ttf21DerelictSDL2ttfLoader
+_D8derelict4util6loader15SharedLibLoader6__ctorMFAyaZC8derelict4util6loader15SharedLibLoader	8	0	0
+------------------
+	   16	_D8derelict7opengl33gl317DerelictGL3Loader11loadSymbolsMFZv
+_D8derelict4util6loader15SharedLibLoader8bindFuncMFPPvAyabZv	16	20	3
+	   16	_D8derelict4util6loader15SharedLibLoader10loadSymbolMFAyabZPv
+------------------
+	  789	_D8derelict4util6loader15SharedLibLoader10loadSymbolMFAyabZPv
+_D8derelict4util9sharedlib9SharedLib10loadSymbolMFAyabZPv	789	973	942
+	  789	_D3std5range10primitives12__T5emptyTaZ5emptyFNaNbNdNiNfxAaZb
+------------------
+	    2	_D3app13loadLibrariesFZv
+_D8derelict4util9sharedlib9SharedLib4loadMFAAyaZv	2	5214	5214
+	    2	_D3std5range10primitives12__T5emptyTaZ5emptyFNaNbNdNiNfxAaZb
+------------------
+_D8derelict7assimp36assimp18_sharedStaticCtor1FZv	0	31	22
+	    1	_D8derelict7assimp36assimp21DerelictASSIMP3Loader6__ctorMFZC8derelict7assimp36assimp21DerelictASSIMP3Loader
+------------------
+	    1	_D8derelict7assimp36assimp18_sharedStaticCtor1FZv
+_D8derelict7assimp36assimp21DerelictASSIMP3Loader6__ctorMFZC8derelict7assimp36assimp21DerelictASSIMP3Loader	1	9	9
+	    1	_D8derelict4util6loader15SharedLibLoader6__ctorMFAyaZC8derelict4util6loader15SharedLibLoader
+------------------
+	    1	_D3app13loadLibrariesFZv
+_D8derelict7opengl32gl16DerelictGLLoader11loadSymbolsMFZv	1	445	71
+	    1	_D8derelict7opengl33gl317DerelictGL3Loader11loadSymbolsMFZv
+	  275	_D8derelict4util6loader15SharedLibLoader10loadSymbolMFAyabZPv
+------------------
+	    1	_D8derelict7opengl32gl18_sharedStaticCtor1FZv
+_D8derelict7opengl32gl16DerelictGLLoader6__ctorMFZC8derelict7opengl32gl16DerelictGLLoader	1	0	0
+	    1	_D8derelict7opengl33gl317DerelictGL3Loader6__ctorMFZC8derelict7opengl33gl317DerelictGL3Loader
+------------------
+_D8derelict7opengl32gl18_sharedStaticCtor1FZv	0	1	1
+	    1	_D8derelict7opengl32gl16DerelictGLLoader6__ctorMFZC8derelict7opengl32gl16DerelictGLLoader
+------------------
+	    1	_D8derelict7opengl32gl16DerelictGLLoader11loadSymbolsMFZv
+_D8derelict7opengl33gl317DerelictGL3Loader11loadSymbolsMFZv	1	106	10
+	   61	_D8derelict4util6loader15SharedLibLoader10loadSymbolMFAyabZPv
+	   16	_D8derelict4util6loader15SharedLibLoader8bindFuncMFPPvAyabZv
+------------------
+	    1	_D8derelict7opengl33gl318_sharedStaticCtor2FZv
+	    1	_D8derelict7opengl32gl16DerelictGLLoader6__ctorMFZC8derelict7opengl32gl16DerelictGLLoader
+_D8derelict7opengl33gl317DerelictGL3Loader6__ctorMFZC8derelict7opengl33gl317DerelictGL3Loader	2	0	0
+	    2	_D8derelict4util6loader15SharedLibLoader6__ctorMFAyaZC8derelict4util6loader15SharedLibLoader
+------------------
+_D8derelict7opengl33gl318_sharedStaticCtor2FZv	0	17	17
+	    1	_D8derelict7opengl33gl317DerelictGL3Loader6__ctorMFZC8derelict7opengl33gl317DerelictGL3Loader
+------------------
+	    1	_D8derelict9freeimage9freeimage18_sharedStaticCtor1FZv
+_D8derelict9freeimage9freeimage16DerelictFILoader6__ctorMFZC8derelict9freeimage9freeimage16DerelictFILoader	1	0	0
+	    1	_D8derelict4util6loader15SharedLibLoader6__ctorMFAyaZC8derelict4util6loader15SharedLibLoader
+------------------
+_D8derelict9freeimage9freeimage18_sharedStaticCtor1FZv	0	9	9
+	    1	_D8derelict9freeimage9freeimage16DerelictFILoader6__ctorMFZC8derelict9freeimage9freeimage16DerelictFILoader
+------------------
+	    1	_Dmain
+_D8renderer5scene5Scene6__ctorMFZC8renderer5scene5Scene	1	0	0
+------------------
+	63767	_D8renderer8renderer8Renderer9pathTraceMFS3gfm4math6vector17__T6VectorTfVii3Z6VectorS3gfm4math6vector17__T6VectorTfVii3Z6VectoriS3gfm4math6vector17__T6VectorTfVii3Z6VectorS3gfm4math6vector17__T6VectorTfVii3Z6VectorbZS3std8typecons143__T5TupleTS3gfm4math6vector17__T6VectorTfVii3Z6VectorTS3gfm4math6vector17__T6VectorTfVii3Z6VectorTC8renderer7objects11sceneobject11SceneObjectZ5Tuple
+_D8renderer7objects11sceneobject11SceneObject10reflectiveMFZb	63767	10081	10081
+------------------
+	    1	_Dmain
+_D8renderer7objects11sceneobject11SceneObject10reflectiveMFbZv	1	0	0
+------------------
+	    8	_Dmain
+_D8renderer7objects11sceneobject11SceneObject5colorMFS3gfm4math6vector17__T6VectorTfVii3Z6VectorZv	8	0	0
+	    8	_D3gfm4math6vector17__T6VectorTfVii3Z6Vector57__T8opAssignTS3gfm4math6vector17__T6VectorTfVii3Z6VectorZ8opAssignMFNaNbNcNiNjNfS3gfm4math6vector17__T6VectorTfVii3Z6VectorZS3gfm4math6vector17__T6VectorTfVii3Z6Vector
+------------------
+	88209	_D8renderer8renderer8Renderer9pathTraceMFS3gfm4math6vector17__T6VectorTfVii3Z6VectorS3gfm4math6vector17__T6VectorTfVii3Z6VectoriS3gfm4math6vector17__T6VectorTfVii3Z6VectorS3gfm4math6vector17__T6VectorTfVii3Z6VectorbZS3std8typecons143__T5TupleTS3gfm4math6vector17__T6VectorTfVii3Z6VectorTS3gfm4math6vector17__T6VectorTfVii3Z6VectorTC8renderer7objects11sceneobject11SceneObjectZ5Tuple
+_D8renderer7objects11sceneobject11SceneObject5colorMFZS3gfm4math6vector17__T6VectorTfVii3Z6Vector	88209	10153	10153
+------------------
+	    1	_D8renderer7objects5plane5Plane6__ctorMFS3gfm4math6vector17__T6VectorTfVii3Z6VectorS3gfm4math6vector17__T6VectorTfVii3Z6VectorZC8renderer7objects5plane5Plane
+	    8	_D8renderer7objects6sphere6Sphere6__ctorMFS3gfm4math6vector17__T6VectorTfVii3Z6VectorfZC8renderer7objects6sphere6Sphere
+_D8renderer7objects11sceneobject11SceneObject6__ctorMFZC8renderer7objects11sceneobject11SceneObject	9	1	1
+------------------
+	    9	_D8renderer8renderer8Renderer6__ctorMFC8renderer5scene5SceneiiZC8renderer8renderer8Renderer
+	64279	_D8renderer8renderer8Renderer9pathTraceMFS3gfm4math6vector17__T6VectorTfVii3Z6VectorS3gfm4math6vector17__T6VectorTfVii3Z6VectoriS3gfm4math6vector17__T6VectorTfVii3Z6VectorS3gfm4math6vector17__T6VectorTfVii3Z6VectorbZS3std8typecons143__T5TupleTS3gfm4math6vector17__T6VectorTfVii3Z6VectorTS3gfm4math6vector17__T6VectorTfVii3Z6VectorTC8renderer7objects11sceneobject11SceneObjectZ5Tuple
+_D8renderer7objects11sceneobject11SceneObject7isLightMFZb	64288	18056	13441
+	64288	_D8renderer7objects11sceneobject11SceneObject8emissionMFZf
+------------------
+	64288	_D8renderer7objects11sceneobject11SceneObject7isLightMFZb
+	88209	_D8renderer8renderer8Renderer9pathTraceMFS3gfm4math6vector17__T6VectorTfVii3Z6VectorS3gfm4math6vector17__T6VectorTfVii3Z6VectoriS3gfm4math6vector17__T6VectorTfVii3Z6VectorS3gfm4math6vector17__T6VectorTfVii3Z6VectorbZS3std8typecons143__T5TupleTS3gfm4math6vector17__T6VectorTfVii3Z6VectorTS3gfm4math6vector17__T6VectorTfVii3Z6VectorTC8renderer7objects11sceneobject11SceneObjectZ5Tuple
+_D8renderer7objects11sceneobject11SceneObject8emissionMFZf	152497	13640	13640
+------------------
+	    1	_Dmain
+_D8renderer7objects11sceneobject11SceneObject8emissionMFfZv	1	0	0
+------------------
+	    8	_D8renderer7objects6sphere6Sphere6__ctorMFS3gfm4math6vector17__T6VectorTfVii3Z6VectorfZC8renderer7objects6sphere6Sphere
+_D8renderer7objects11sceneobject11SceneObject8positionMFS3gfm4math6vector17__T6VectorTfVii3Z6VectorZv	8	21	20
+	    8	_D3gfm4math6vector17__T6VectorTfVii3Z6Vector57__T8opAssignTS3gfm4math6vector17__T6VectorTfVii3Z6VectorZ8opAssignMFNaNbNcNiNjNfS3gfm4math6vector17__T6VectorTfVii3Z6VectorZS3gfm4math6vector17__T6VectorTfVii3Z6Vector
+------------------
+	134025246	_D8renderer8renderer8Renderer11getDistanceMFS3gfm4math6vector17__T6VectorTfVii3Z6VectorJC8renderer7objects11sceneobject11SceneObjectZf
+	63767	_D8renderer8renderer8Renderer9pathTraceMFS3gfm4math6vector17__T6VectorTfVii3Z6VectorS3gfm4math6vector17__T6VectorTfVii3Z6VectoriS3gfm4math6vector17__T6VectorTfVii3Z6VectorS3gfm4math6vector17__T6VectorTfVii3Z6VectorbZS3std8typecons143__T5TupleTS3gfm4math6vector17__T6VectorTfVii3Z6VectorTS3gfm4math6vector17__T6VectorTfVii3Z6VectorTC8renderer7objects11sceneobject11SceneObjectZ5Tuple
+_D8renderer7objects11sceneobject11SceneObject8positionMFZS3gfm4math6vector17__T6VectorTfVii3Z6Vector	134089013	8763212	8763212
+------------------
+	14891694	_D8renderer8renderer8Renderer11getDistanceMFS3gfm4math6vector17__T6VectorTfVii3Z6VectorJC8renderer7objects11sceneobject11SceneObjectZf
+_D8renderer7objects5plane5Plane11getDistanceMFS3gfm4math6vector17__T6VectorTfVii3Z6VectorZf	14891694	2395901	2395901
+------------------
+	    1	_Dmain
+_D8renderer7objects5plane5Plane6__ctorMFS3gfm4math6vector17__T6VectorTfVii3Z6VectorS3gfm4math6vector17__T6VectorTfVii3Z6VectorZC8renderer7objects5plane5Plane	1	2	1
+	    1	_D8renderer7objects11sceneobject11SceneObject6__ctorMFZC8renderer7objects11sceneobject11SceneObject
+------------------
+	119133552	_D8renderer8renderer8Renderer11getDistanceMFS3gfm4math6vector17__T6VectorTfVii3Z6VectorJC8renderer7objects11sceneobject11SceneObjectZf
+_D8renderer7objects6sphere6Sphere11getDistanceMFS3gfm4math6vector17__T6VectorTfVii3Z6VectorZf	119133552	31911037	31911037
+------------------
+	    8	_Dmain
+_D8renderer7objects6sphere6Sphere6__ctorMFS3gfm4math6vector17__T6VectorTfVii3Z6VectorfZC8renderer7objects6sphere6Sphere	8	22	1
+	    8	_D8renderer7objects11sceneobject11SceneObject6__ctorMFZC8renderer7objects11sceneobject11SceneObject
+	    8	_D8renderer7objects11sceneobject11SceneObject8positionMFS3gfm4math6vector17__T6VectorTfVii3Z6VectorZv
+------------------
+	14362440	_D8renderer8renderer8Renderer8raymarchMFS3gfm4math6vector17__T6VectorTfVii3Z6VectorS3gfm4math6vector17__T6VectorTfVii3Z6VectorJS3gfm4math6vector17__T6VectorTfVii3Z6VectorJS3gfm4math6vector17__T6VectorTfVii3Z6VectorJC8renderer7objects11sceneobject11SceneObjectZb
+	529254	_D8renderer8renderer8Renderer13computeNormalMFS3gfm4math6vector17__T6VectorTfVii3Z6VectorZS3gfm4math6vector17__T6VectorTfVii3Z6Vector
+_D8renderer8renderer8Renderer11getDistanceMFS3gfm4math6vector17__T6VectorTfVii3Z6VectorJC8renderer7objects11sceneobject11SceneObjectZf	14891694	64124652	21061557
+	134025246	_D8renderer7objects11sceneobject11SceneObject8positionMFZS3gfm4math6vector17__T6VectorTfVii3Z6Vector
+	14891694	_D8renderer7objects5plane5Plane11getDistanceMFS3gfm4math6vector17__T6VectorTfVii3Z6VectorZf
+	119133552	_D8renderer7objects6sphere6Sphere11getDistanceMFS3gfm4math6vector17__T6VectorTfVii3Z6VectorZf
+------------------
+	65536	_D8renderer8renderer8Renderer6renderMFiZAS3gfm4math6vector17__T6VectorTfVii3Z6Vector
+_D8renderer8renderer8Renderer11renderPixelMFiiZS3gfm4math6vector17__T6VectorTfVii3Z6Vector	65536	67589644	82786
+	    1	_D3std9exception27__T7enforceHTC9ExceptionTkZ7enforceFNaNfkLAxaAyakZk
+	131072	_D3std6random201__T7uniformVAyaa2_5b29TfTfTS3std6random135__T21MersenneTwisterEngineTkVki32Vki624Vki397Vki31Vki2567483615Vki11Vki4294967295Vki7Vki2636928640Vki15Vki4022730752Vki18Vki1812433253Z21MersenneTwisterEngineZ7uniformFNfffKS3std6random135__T21MersenneTwisterEngineTkVki32Vki624Vki397Vki31Vki2567483615Vki11Vki4294967295Vki7Vki2636928640Vki15Vki4022730752Vki18Vki1812433253Z21MersenneTwisterEngineZf
+	65536	_D3gfm4math10quaternion18__T10QuaternionTfZ10Quaternion23__T8opBinaryHVAyaa1_2aZ8opBinaryMxFNaNbNiNfS3gfm4math6vector17__T6VectorTfVii3Z6VectorZS3gfm4math6vector17__T6VectorTfVii3Z6Vector
+	65536	_D8renderer8renderer8Renderer9pathTraceMFS3gfm4math6vector17__T6VectorTfVii3Z6VectorS3gfm4math6vector17__T6VectorTfVii3Z6VectoriS3gfm4math6vector17__T6VectorTfVii3Z6VectorS3gfm4math6vector17__T6VectorTfVii3Z6VectorbZS3std8typecons143__T5TupleTS3gfm4math6vector17__T6VectorTfVii3Z6VectorTS3gfm4math6vector17__T6VectorTfVii3Z6VectorTC8renderer7objects11sceneobject11SceneObjectZ5Tuple
+------------------
+	88209	_D8renderer8renderer8Renderer8raymarchMFS3gfm4math6vector17__T6VectorTfVii3Z6VectorS3gfm4math6vector17__T6VectorTfVii3Z6VectorJS3gfm4math6vector17__T6VectorTfVii3Z6VectorJS3gfm4math6vector17__T6VectorTfVii3Z6VectorJC8renderer7objects11sceneobject11SceneObjectZb
+_D8renderer8renderer8Renderer13computeNormalMFS3gfm4math6vector17__T6VectorTfVii3Z6VectorZS3gfm4math6vector17__T6VectorTfVii3Z6Vector	88209	1510692	101274
+	529254	_D8renderer8renderer8Renderer11getDistanceMFS3gfm4math6vector17__T6VectorTfVii3Z6VectorJC8renderer7objects11sceneobject11SceneObjectZf
+------------------
+	63767	_D8renderer8renderer8Renderer9pathTraceMFS3gfm4math6vector17__T6VectorTfVii3Z6VectorS3gfm4math6vector17__T6VectorTfVii3Z6VectoriS3gfm4math6vector17__T6VectorTfVii3Z6VectorS3gfm4math6vector17__T6VectorTfVii3Z6VectorbZS3std8typecons143__T5TupleTS3gfm4math6vector17__T6VectorTfVii3Z6VectorTS3gfm4math6vector17__T6VectorTfVii3Z6VectorTC8renderer7objects11sceneobject11SceneObjectZ5Tuple
+_D8renderer8renderer8Renderer22getRandomHemisphereDirMFS3gfm4math6vector17__T6VectorTfVii3Z6VectorZS3gfm4math6vector17__T6VectorTfVii3Z6Vector	63767	92120	38685
+	191301	_D3std6random201__T7uniformVAyaa2_5b29TfTfTS3std6random135__T21MersenneTwisterEngineTkVki32Vki624Vki397Vki31Vki2567483615Vki11Vki4294967295Vki7Vki2636928640Vki15Vki4022730752Vki18Vki1812433253Z21MersenneTwisterEngineZ7uniformFNfffKS3std6random135__T21MersenneTwisterEngineTkVki32Vki624Vki397Vki31Vki2567483615Vki11Vki4294967295Vki7Vki2636928640Vki15Vki4022730752Vki18Vki1812433253Z21MersenneTwisterEngineZf
+------------------
+	    1	_Dmain
+_D8renderer8renderer8Renderer6__ctorMFC8renderer5scene5SceneiiZC8renderer8renderer8Renderer	1	3	2
+	    9	_D8renderer7objects11sceneobject11SceneObject7isLightMFZb
+------------------
+	    1	_D3app9enterLoopFZv
+_D8renderer8renderer8Renderer6renderMFiZAS3gfm4math6vector17__T6VectorTfVii3Z6Vector	1	67661792	41141
+	65536	_D3gfm4math6vector17__T6VectorTfVii3Z6Vector57__T8opAssignTS3gfm4math6vector17__T6VectorTfVii3Z6VectorZ8opAssignMFNaNbNcNiNjNfS3gfm4math6vector17__T6VectorTfVii3Z6VectorZS3gfm4math6vector17__T6VectorTfVii3Z6Vector
+	65536	_D8renderer8renderer8Renderer11renderPixelMFiiZS3gfm4math6vector17__T6VectorTfVii3Z6Vector
+	65536	_D3gfm4math6vector17__T6VectorTfVii3Z6Vector24__T8opBinaryVAyaa1_2aTfZ8opBinaryMxFNaNbNiNffZS3gfm4math6vector17__T6VectorTfVii3Z6Vector
+	65536	_D3gfm4math6vector17__T6VectorTfVii3Z6Vector69__T10opOpAssignVAyaa1_2bTS3gfm4math6vector17__T6VectorTfVii3Z6VectorZ10opOpAssignMFNaNbNcNiNjNfS3gfm4math6vector17__T6VectorTfVii3Z6VectorZS3gfm4math6vector17__T6VectorTfVii3Z6Vector
+------------------
+	191960	_D8renderer8renderer8Renderer9pathTraceMFS3gfm4math6vector17__T6VectorTfVii3Z6VectorS3gfm4math6vector17__T6VectorTfVii3Z6VectoriS3gfm4math6vector17__T6VectorTfVii3Z6VectorS3gfm4math6vector17__T6VectorTfVii3Z6VectorbZS3std8typecons143__T5TupleTS3gfm4math6vector17__T6VectorTfVii3Z6VectorTS3gfm4math6vector17__T6VectorTfVii3Z6VectorTC8renderer7objects11sceneobject11SceneObjectZ5Tuple
+_D8renderer8renderer8Renderer8raymarchMFS3gfm4math6vector17__T6VectorTfVii3Z6VectorS3gfm4math6vector17__T6VectorTfVii3Z6VectorJS3gfm4math6vector17__T6VectorTfVii3Z6VectorJS3gfm4math6vector17__T6VectorTfVii3Z6VectorJC8renderer7objects11sceneobject11SceneObjectZb	191960	66847463	1805512
+	14362440	_D8renderer8renderer8Renderer11getDistanceMFS3gfm4math6vector17__T6VectorTfVii3Z6VectorJC8renderer7objects11sceneobject11SceneObjectZf
+	14170480	_D3gfm4math6vector17__T6VectorTfVii3Z6Vector69__T10opOpAssignVAyaa1_2bTS3gfm4math6vector17__T6VectorTfVii3Z6VectorZ10opOpAssignMFNaNbNcNiNjNfS3gfm4math6vector17__T6VectorTfVii3Z6VectorZS3gfm4math6vector17__T6VectorTfVii3Z6Vector
+	176418	_D3gfm4math6vector17__T6VectorTfVii3Z6Vector57__T8opAssignTS3gfm4math6vector17__T6VectorTfVii3Z6VectorZ8opAssignMFNaNbNcNiNjNfS3gfm4math6vector17__T6VectorTfVii3Z6VectorZS3gfm4math6vector17__T6VectorTfVii3Z6Vector
+	88209	_D8renderer8renderer8Renderer13computeNormalMFS3gfm4math6vector17__T6VectorTfVii3Z6VectorZS3gfm4math6vector17__T6VectorTfVii3Z6Vector
+------------------
+	65536	_D8renderer8renderer8Renderer11renderPixelMFiiZS3gfm4math6vector17__T6VectorTfVii3Z6Vector
+	127534	_D8renderer8renderer8Renderer9pathTraceMFS3gfm4math6vector17__T6VectorTfVii3Z6VectorS3gfm4math6vector17__T6VectorTfVii3Z6VectoriS3gfm4math6vector17__T6VectorTfVii3Z6VectorS3gfm4math6vector17__T6VectorTfVii3Z6VectorbZS3std8typecons143__T5TupleTS3gfm4math6vector17__T6VectorTfVii3Z6VectorTS3gfm4math6vector17__T6VectorTfVii3Z6VectorTC8renderer7objects11sceneobject11SceneObjectZ5Tuple
+_D8renderer8renderer8Renderer9pathTraceMFS3gfm4math6vector17__T6VectorTfVii3Z6VectorS3gfm4math6vector17__T6VectorTfVii3Z6VectoriS3gfm4math6vector17__T6VectorTfVii3Z6VectorS3gfm4math6vector17__T6VectorTfVii3Z6VectorbZS3std8typecons143__T5TupleTS3gfm4math6vector17__T6VectorTfVii3Z6VectorTS3gfm4math6vector17__T6VectorTfVii3Z6VectorTC8renderer7objects11sceneobject11SceneObjectZ5Tuple	193070	67385438	307595
+	191960	_D8renderer8renderer8Renderer8raymarchMFS3gfm4math6vector17__T6VectorTfVii3Z6VectorS3gfm4math6vector17__T6VectorTfVii3Z6VectorJS3gfm4math6vector17__T6VectorTfVii3Z6VectorJS3gfm4math6vector17__T6VectorTfVii3Z6VectorJC8renderer7objects11sceneobject11SceneObjectZb
+	88209	_D8renderer7objects11sceneobject11SceneObject5colorMFZS3gfm4math6vector17__T6VectorTfVii3Z6Vector
+	88209	_D3gfm4math6vector17__T6VectorTfVii3Z6Vector69__T10opOpAssignVAyaa1_2aTS3gfm4math6vector17__T6VectorTfVii3Z6VectorZ10opOpAssignMFNaNbNcNiNjNfS3gfm4math6vector17__T6VectorTfVii3Z6VectorZS3gfm4math6vector17__T6VectorTfVii3Z6Vector
+	88209	_D8renderer7objects11sceneobject11SceneObject8emissionMFZf
+	215604	_D3gfm4math6vector17__T6VectorTfVii3Z6Vector69__T10opOpAssignVAyaa1_2bTS3gfm4math6vector17__T6VectorTfVii3Z6VectorZ10opOpAssignMFNaNbNcNiNjNfS3gfm4math6vector17__T6VectorTfVii3Z6VectorZS3gfm4math6vector17__T6VectorTfVii3Z6Vector
+	64279	_D8renderer7objects11sceneobject11SceneObject7isLightMFZb
+	63767	_D8renderer8renderer8Renderer22getRandomHemisphereDirMFS3gfm4math6vector17__T6VectorTfVii3Z6VectorZS3gfm4math6vector17__T6VectorTfVii3Z6Vector
+	63767	_D8renderer7objects11sceneobject11SceneObject8positionMFZS3gfm4math6vector17__T6VectorTfVii3Z6Vector
+	63767	_D3gfm4math6vector17__T6VectorTfVii3Z6Vector66__T8opBinaryVAyaa1_2dTS3gfm4math6vector17__T6VectorTfVii3Z6VectorZ8opBinaryMxFNaNbNiNfS3gfm4math6vector17__T6VectorTfVii3Z6VectorZS3gfm4math6vector17__T6VectorTfVii3Z6Vector
+	127534	_D3gfm4math6vector17__T6VectorTfVii3Z6Vector10normalizedMxFNaNbNiNfZS3gfm4math6vector17__T6VectorTfVii3Z6Vector
+	63767	_D3gfm4math6vector17__T6VectorTfVii3Z6Vector24__T8opBinaryVAyaa1_2aTiZ8opBinaryMxFNaNbNiNfiZS3gfm4math6vector17__T6VectorTfVii3Z6Vector
+	63767	_D3gfm4math6vector17__T6VectorTfVii3Z6Vector66__T8opBinaryVAyaa1_2bTS3gfm4math6vector17__T6VectorTfVii3Z6VectorZ8opBinaryMxFNaNbNiNfS3gfm4math6vector17__T6VectorTfVii3Z6VectorZS3gfm4math6vector17__T6VectorTfVii3Z6Vector
+	127534	_D8renderer8renderer8Renderer9pathTraceMFS3gfm4math6vector17__T6VectorTfVii3Z6VectorS3gfm4math6vector17__T6VectorTfVii3Z6VectoriS3gfm4math6vector17__T6VectorTfVii3Z6VectorS3gfm4math6vector17__T6VectorTfVii3Z6VectorbZS3std8typecons143__T5TupleTS3gfm4math6vector17__T6VectorTfVii3Z6VectorTS3gfm4math6vector17__T6VectorTfVii3Z6VectorTC8renderer7objects11sceneobject11SceneObjectZ5Tuple
+	63767	_D8renderer7objects11sceneobject11SceneObject10reflectiveMFZb
+	57254	_D3gfm4math6vector17__T6VectorTfVii3Z6Vector27__T10opOpAssignVAyaa1_2bTfZ10opOpAssignMFNaNbNcNiNjNffZS3gfm4math6vector17__T6VectorTfVii3Z6Vector
+------------------
+_Dmain	0	74174307	5807
+	    1	_D8renderer5scene5Scene6__ctorMFZC8renderer5scene5Scene
+	    1	_D3gfm4math6vector17__T6VectorTfVii3Z6Vector17__T6__ctorTiTfTfZ6__ctorMFNaNbNcNiNfiffZS3gfm4math6vector17__T6VectorTfVii3Z6Vector
+	    1	_D3gfm4math6vector17__T6VectorTfVii3Z6Vector17__T6__ctorTiTfTiZ6__ctorMFNaNbNcNiNfifiZS3gfm4math6vector17__T6VectorTfVii3Z6Vector
+	    1	_D8renderer7objects5plane5Plane6__ctorMFS3gfm4math6vector17__T6VectorTfVii3Z6VectorS3gfm4math6vector17__T6VectorTfVii3Z6VectorZC8renderer7objects5plane5Plane
+	    3	_D3gfm4math6vector17__T6VectorTfVii3Z6Vector17__T6__ctorTiTiTfZ6__ctorMFNaNbNcNiNfiifZS3gfm4math6vector17__T6VectorTfVii3Z6Vector
+	    8	_D8renderer7objects6sphere6Sphere6__ctorMFS3gfm4math6vector17__T6VectorTfVii3Z6VectorfZC8renderer7objects6sphere6Sphere
+	    8	_D8renderer7objects11sceneobject11SceneObject5colorMFS3gfm4math6vector17__T6VectorTfVii3Z6VectorZv
+	    1	_D8renderer7objects11sceneobject11SceneObject10reflectiveMFbZv
+	    5	_D3gfm4math6vector17__T6VectorTfVii3Z6Vector17__T6__ctorTfTfTfZ6__ctorMFNaNbNcNiNffffZS3gfm4math6vector17__T6VectorTfVii3Z6Vector
+	    1	_D8renderer7objects11sceneobject11SceneObject8emissionMFfZv
+	    1	_D8renderer8renderer8Renderer6__ctorMFC8renderer5scene5SceneiiZC8renderer8renderer8Renderer
+	65537	_D3gfm4math6vector17__T6VectorTfVii3Z6Vector57__T8opAssignTS3gfm4math6vector17__T6VectorTfVii3Z6VectorZ8opAssignMFNaNbNcNiNjNfS3gfm4math6vector17__T6VectorTfVii3Z6VectorZS3gfm4math6vector17__T6VectorTfVii3Z6Vector
+	    1	_D3app5startFZv
+
+======== Timer Is 3703127 Ticks/Sec, Times are in Microsecs ========
+
+  Num          Tree        Func        Per
+  Calls        Time        Time        Call
+
+119133552     8617321     8617321           0     float renderer.objects.sphere.Sphere.getDistance(gfm.math.vector.Vector!(float, 3).Vector)
+14891694    17316352     5687505           0     float renderer.renderer.Renderer.getDistance(gfm.math.vector.Vector!(float, 3).Vector, out renderer.objects.sceneobject.SceneObject)
+134089013     2366435     2366435           0     gfm.math.vector.Vector!(float, 3).Vector renderer.objects.sceneobject.SceneObject.position()
+      1     1714060     1713239     1713239     void app.openWindow()
+14891694      646994      646994           0     float renderer.objects.plane.Plane.getDistance(gfm.math.vector.Vector!(float, 3).Vector)
+ 191960    18051625      487564           2     bool renderer.renderer.Renderer.raymarch(gfm.math.vector.Vector!(float, 3).Vector, gfm.math.vector.Vector!(float, 3).Vector, out gfm.math.vector.Vector!(float, 3).Vector, out gfm.math.vector.Vector!(float, 3).Vector, out renderer.objects.sceneobject.SceneObject)
+14517156      217882      217882           0     pure nothrow ref @nogc return @safe gfm.math.vector.Vector!(float, 3).Vector gfm.math.vector.Vector!(float, 3).Vector.opOpAssign!("+", gfm.math.vector.Vector!(float, 3).Vector).opOpAssign(gfm.math.vector.Vector!(float, 3).Vector)
+ 193070    18196901       83063           0     std.typecons.Tuple!(gfm.math.vector.Vector!(float, 3).Vector, gfm.math.vector.Vector!(float, 3).Vector, renderer.objects.sceneobject.SceneObject).Tuple renderer.renderer.Renderer.pathTrace(gfm.math.vector.Vector!(float, 3).Vector, gfm.math.vector.Vector!(float, 3).Vector, int, gfm.math.vector.Vector!(float, 3).Vector, gfm.math.vector.Vector!(float, 3).Vector, bool)
+  88209      407950       27348           0     gfm.math.vector.Vector!(float, 3).Vector renderer.renderer.Renderer.computeNormal(gfm.math.vector.Vector!(float, 3).Vector)
+ 322373       29319       23547           0     @safe float std.random.uniform!("[)", float, float, std.random.MersenneTwisterEngine!(uint, 32u, 624u, 397u, 31u, 2567483615u, 11u, 4294967295u, 7u, 2636928640u, 15u, 4022730752u, 18u, 1812433253u).MersenneTwisterEngine).uniform(float, float, ref std.random.MersenneTwisterEngine!(uint, 32u, 624u, 397u, 31u, 2567483615u, 11u, 4294967295u, 7u, 2636928640u, 15u, 4022730752u, 18u, 1812433253u).MersenneTwisterEngine)
+  65536    18252045       22355           0     gfm.math.vector.Vector!(float, 3).Vector renderer.renderer.Renderer.renderPixel(int, int)
+      1       16540       16540       16540     void app.limitFps()
+      1    18309437       14623       14623     void app.enterLoop()
+ 307507       12428       12428           0     pure nothrow ref @nogc return @safe gfm.math.vector.Vector!(float, 3).Vector gfm.math.vector.Vector!(float, 3).Vector.opAssign!(gfm.math.vector.Vector!(float, 3).Vector).opAssign(gfm.math.vector.Vector!(float, 3).Vector)
+      1    18271528       11109       11109     gfm.math.vector.Vector!(float, 3).Vector[] renderer.renderer.Renderer.render(int)
+  65536       17898       10480           0     const pure nothrow @nogc @safe gfm.math.vector.Vector!(float, 3).Vector gfm.math.quaternion.Quaternion!(float).Quaternion.opBinary!("*").opBinary(gfm.math.vector.Vector!(float, 3).Vector)
+  63767       24876       10446           0     gfm.math.vector.Vector!(float, 3).Vector renderer.renderer.Renderer.getRandomHemisphereDir(gfm.math.vector.Vector!(float, 3).Vector)
+  65536        7418        7418           0     pure nothrow ref @nogc return @safe gfm.math.vector.Vector!(float, 4).Vector gfm.math.vector.Vector!(float, 4).Vector.opAssign!(const(gfm.math.vector.Vector!(float, 4).Vector)).opAssign(const(gfm.math.vector.Vector!(float, 4).Vector))
+ 322397        5772        5772           0     pure @safe bool std.exception.enforce!(Exception, bool).enforce(bool, lazy const(char)[], immutable(char)[], uint)
+  65536        5144        5144           0     const pure nothrow @nogc @safe gfm.math.vector.Vector!(float, 3).Vector gfm.math.vector.Vector!(float, 3).Vector.opBinary!("*", float).opBinary(float)
+ 127534        4324        4324           0     const pure nothrow @nogc @safe gfm.math.vector.Vector!(float, 3).Vector gfm.math.vector.Vector!(float, 3).Vector.normalized()
+ 152497        3683        3683           0     float renderer.objects.sceneobject.SceneObject.emission()
+  64288        4875        3629           0     bool renderer.objects.sceneobject.SceneObject.isLight()
+      6        3733        3600         600     @safe void std.experimental.logger.core.Logger.log!(immutable(char)[]).log(const(std.experimental.logger.core.LogLevel), lazy immutable(char)[], int, immutable(char)[], immutable(char)[], immutable(char)[], immutable(char)[])
+  57254        5109        3371           0     pure nothrow ref @nogc return @safe gfm.math.vector.Vector!(float, 3).Vector gfm.math.vector.Vector!(float, 3).Vector.opOpAssign!("+", float).opOpAssign(float)
+ 196608        3229        3229           0     pure nothrow @nogc @safe float gfm.math.funcs.clamp!(float).clamp(float, float, float)
+  88209        2796        2796           0     pure nothrow ref @nogc return @safe gfm.math.vector.Vector!(float, 3).Vector gfm.math.vector.Vector!(float, 3).Vector.opOpAssign!("*", gfm.math.vector.Vector!(float, 3).Vector).opOpAssign(gfm.math.vector.Vector!(float, 3).Vector)
+  88209        2741        2741           0     gfm.math.vector.Vector!(float, 3).Vector renderer.objects.sceneobject.SceneObject.color()
+  63767        2722        2722           0     bool renderer.objects.sceneobject.SceneObject.reflective()
+  63767        2435        2435           0     const pure nothrow @nogc @safe gfm.math.vector.Vector!(float, 3).Vector gfm.math.vector.Vector!(float, 3).Vector.opBinary!("*", int).opBinary(int)
+  63767        2065        2065           0     const pure nothrow @nogc @safe gfm.math.vector.Vector!(float, 3).Vector gfm.math.vector.Vector!(float, 3).Vector.opBinary!("+", gfm.math.vector.Vector!(float, 3).Vector).opBinary(gfm.math.vector.Vector!(float, 3).Vector)
+  57254        1737        1737           0     pure nothrow ref @nogc return @safe gfm.math.vector.Vector!(float, 3).Vector gfm.math.vector.Vector!(float, 3).Vector.opAssign!(float).opAssign(float)
+  63767        1732        1732           0     const pure nothrow @nogc @safe gfm.math.vector.Vector!(float, 3).Vector gfm.math.vector.Vector!(float, 3).Vector.opBinary!("-", gfm.math.vector.Vector!(float, 3).Vector).opBinary(gfm.math.vector.Vector!(float, 3).Vector)
+      1    20030181        1568        1568     _Dmain
+      2        1407        1407         703     void derelict.util.sharedlib.SharedLib.load(immutable(char)[][])
+      1        1308        1308        1308     void app.updateEvents()
+    789         262         254           0     void* derelict.util.sharedlib.SharedLib.loadSymbol(immutable(char)[], bool)
+      1        2899          49          49     void app.loadLibraries()
+      1         223          37          37     void derelict.sdl2.sdl.DerelictSDL2Loader.loadSymbols()
+      6          27          27           4     pure nothrow ref @trusted std.array.Appender!(immutable(char)[]).Appender std.array.Appender!(immutable(char)[]).Appender.__ctor(immutable(char)[])
+      1          36          21          21     pure @safe immutable(char)[] app.enterLoop().__dgliteral3()
+    789         283          20           0     void* derelict.util.loader.SharedLibLoader.loadSymbol(immutable(char)[], bool)
+      1         120          19          19     void derelict.opengl3.gl.DerelictGLLoader.loadSymbols()
+      6        3749          15           2     @safe void std.experimental.logger.core.log!(immutable(char)[]).log(lazy immutable(char)[], int, immutable(char)[], immutable(char)[], immutable(char)[], immutable(char)[])
+    876          13          13           0     pure nothrow @property @nogc @safe bool std.range.primitives.empty!(char).empty(const(char[]))
+      2          12          12           6     pure nothrow ref @trusted std.array.Appender!(immutable(char)[][]).Appender std.array.Appender!(immutable(char)[][]).Appender.__ctor(immutable(char)[][])
+     12          17          12           1     @safe bool std.format.FormatSpec!(char).FormatSpec.writeUpToNextSpec!(std.experimental.logger.core.MsgRange).writeUpToNextSpec(ref std.experimental.logger.core.MsgRange)
+      2          31          11           5     pure nothrow @safe immutable(char)[][] std.array.array!(std.algorithm.iteration.splitter!("a == b", immutable(char)[], immutable(char)[]).splitter(immutable(char)[], immutable(char)[]).Result).array(std.algorithm.iteration.splitter!("a == b", immutable(char)[], immutable(char)[]).splitter(immutable(char)[], immutable(char)[]).Result)
+      1    20027242           9           9     void app.start()
+      6          45           8           1     pure @nogc @safe immutable(char)[] std.experimental.logger.core.log!(immutable(char)[]).log(lazy immutable(char)[], int, immutable(char)[], immutable(char)[], immutable(char)[], immutable(char)[]).__dgliteral7()
+      6          32           7           1     @safe uint std.format.formattedWrite!(std.experimental.logger.core.MsgRange, char, immutable(char)[]).formattedWrite(ref std.experimental.logger.core.MsgRange, const(char[]), immutable(char)[])
+      6          35           7           1     pure nothrow @safe std.array.Appender!(immutable(char)[]).Appender std.array.appender!(immutable(char)[]).appender()
+      1           8           5           5     void derelict.assimp3.assimp._sharedStaticCtor1()
+      8           5           5           0     void renderer.objects.sceneobject.SceneObject.position(gfm.math.vector.Vector!(float, 3).Vector)
+      2           4           4           2     pure @safe immutable(char)[] std.string.stripLeft!(immutable(char)[]).stripLeft(immutable(char)[])
+      1           8           4           4     pure nothrow @trusted immutable(char)[] std.conv.toImpl!(immutable(char)[], long).toImpl(long, uint, std.ascii.LetterCase)
+      1           4           4           4     void derelict.sdl2.sdl._sharedStaticCtor4()
+      1           4           4           4     void derelict.opengl3.gl3._sharedStaticCtor2()
+      1           4           4           4     void derelict.sdl2.image._sharedStaticCtor1()
+      6           7           4           0     @safe void std.format.formatRange!(std.experimental.logger.core.MsgRange, immutable(char)[], char).formatRange(ref std.experimental.logger.core.MsgRange, ref immutable(char)[], ref const(std.format.FormatSpec!(char).FormatSpec))
+     42           8           4           0     pure @safe int std.conv.to!(int).to!(const(uint)).to(const(uint))
+     12           7           4           0     pure nothrow @trusted char[] std.array.Appender!(immutable(char)[]).Appender.put!(const(char)[]).put(const(char)[]).bigDataFun(uint)
+     42           4           4           0     pure @safe int std.conv.toImpl!(int, const(uint)).toImpl(const(uint))
+      2           3           3           1     pure nothrow @nogc @safe std.algorithm.iteration.splitter!("a == b", immutable(char)[], immutable(char)[]).splitter(immutable(char)[], immutable(char)[]).Result std.algorithm.iteration.splitter!("a == b", immutable(char)[], immutable(char)[]).splitter(immutable(char)[], immutable(char)[])
+      2           3           3           1     pure nothrow @trusted void std.array.Appender!(immutable(char)[][]).Appender.ensureAddable(uint)
+     12           3           3           0     pure nothrow @trusted void std.array.Appender!(immutable(char)[]).Appender.ensureAddable(uint)
+      2           7           3           1     pure nothrow @safe void std.array.Appender!(immutable(char)[][]).Appender.put!(immutable(char)[]).put(immutable(char)[])
+      2           3           3           1     pure nothrow @nogc @safe int std.string.stripRight!(immutable(char)[]).stripRight(immutable(char)[]).__foreachbody2(ref uint, ref dchar)
+      1           6           2           2     pure nothrow @trusted immutable(char)[] std.conv.toImpl!(immutable(char)[], int).toImpl(int, uint, std.ascii.LetterCase)
+      1           3           2           2     pure nothrow @safe char[] std.array.array!(std.conv.toChars!(10, char, 1, int).toChars(int).Result).array(std.conv.toChars!(10, char, 1, int).toChars(int).Result)
+      1          28           2           2     void derelict.opengl3.gl3.DerelictGL3Loader.loadSymbols()
+      1           2           2           2     derelict.assimp3.assimp.DerelictASSIMP3Loader derelict.assimp3.assimp.DerelictASSIMP3Loader.__ctor()
+      1           2           2           2     void derelict.freeimage.freeimage._sharedStaticCtor1()
+      1           2           2           2     pure nothrow @safe char[] std.array.array!(std.conv.toChars!(10, char, 1, long).toChars(long).Result).array(std.conv.toChars!(10, char, 1, long).toChars(long).Result)
+    120           1           1           0     pure @safe bool std.exception.enforceEx!(std.format.FormatException).enforceEx!(bool).enforceEx(bool, lazy immutable(char)[], immutable(char)[], uint)
+     42           1           1           0     pure @safe uint std.conv.parse!(uint, const(char)[]).parse(ref const(char)[])
+     12           8           1           0     pure nothrow @safe void std.array.Appender!(immutable(char)[]).Appender.put!(const(char)[]).put(const(char)[])
+     84           1           1           0     pure @safe bool std.algorithm.searching.startsWith!("a == b", const(char)[], char).startsWith(const(char)[], char)
+     42           1           1           0     pure nothrow @nogc @trusted int std.format.arrayPtrDiff!(char).arrayPtrDiff(const(char[]), const(char[]))
+     16           5           0           0     void derelict.util.loader.SharedLibLoader.bindFunc(void**, immutable(char)[], bool)
+      1           0           0           0     pure nothrow @nogc @safe void std.conv.toChars!(10, char, 1, long).toChars(long).Result.initialize(long)
+      2           0           0           0     pure nothrow @trusted char[] std.array.uninitializedArray!(char[], uint).uninitializedArray(uint)
+     12           1           0           0     pure @safe bool std.experimental.logger.core.isLoggingEnabled!().isLoggingEnabled(std.experimental.logger.core.LogLevel, std.experimental.logger.core.LogLevel, std.experimental.logger.core.LogLevel, lazy bool)
+      1           0           0           0     renderer.renderer.Renderer renderer.renderer.Renderer.__ctor(renderer.scene.Scene, int, int)
+      6           0           0           0     pure nothrow @nogc @safe bool std.experimental.logger.core.Logger.log!(immutable(char)[]).log(const(std.experimental.logger.core.LogLevel), lazy immutable(char)[], int, immutable(char)[], immutable(char)[], immutable(char)[], immutable(char)[]).__dgliteral8()
+      2           0           0           0     pure nothrow @nogc @safe ubyte[] std.algorithm.searching.find!("a == b", ubyte[], ubyte[]).find(ubyte[], scope ubyte[])
+      1           0           0           0     void derelict.sdl2.ttf._sharedStaticCtor5()
+      1           0           0           0     derelict.sdl2.mixer.DerelictSDL2MixerLoader derelict.sdl2.mixer.DerelictSDL2MixerLoader.__ctor()
+      1           0           0           0     void derelict.opengl3.gl._sharedStaticCtor1()
+      8           5           0           0     renderer.objects.sphere.Sphere renderer.objects.sphere.Sphere.__ctor(gfm.math.vector.Vector!(float, 3).Vector, float)
+      9           0           0           0     renderer.objects.sceneobject.SceneObject renderer.objects.sceneobject.SceneObject.__ctor()
+      1           0           0           0     renderer.objects.plane.Plane renderer.objects.plane.Plane.__ctor(gfm.math.vector.Vector!(float, 3).Vector, gfm.math.vector.Vector!(float, 3).Vector)
+     42           0           0           0     pure @safe uint std.exception.enforceEx!(std.format.FormatException).enforceEx!(uint).enforceEx(uint, lazy immutable(char)[], immutable(char)[], uint)
+      1           0           0           0     void derelict.sdl2.mixer._sharedStaticCtor2()
+      4           0           0           0     pure nothrow @nogc @safe void std.algorithm.iteration.splitter!("a == b", immutable(char)[], immutable(char)[]).splitter(immutable(char)[], immutable(char)[]).Result.ensureFrontLength()
+      2           0           0           0     pure nothrow @nogc @safe immutable(char)[] std.algorithm.searching.find!("a == b", immutable(char)[], immutable(char)[]).find(immutable(char)[], scope immutable(char)[])
+      1           0           0           0     pure nothrow @nogc @trusted char[] std.array.array!(std.conv.toChars!(10, char, 1, long).toChars(long).Result).array(std.conv.toChars!(10, char, 1, long).toChars(long).Result).__lambda3()
+      7           0           0           0     pure nothrow @nogc @safe void std.conv.emplaceRef!(char, char, char).emplaceRef(ref char, ref char)
+      1           0           0           0     pure nothrow @nogc @safe std.conv.toChars!(10, char, 1, int).toChars(int).Result std.conv.toChars!(10, char, 1, int).toChars(int)
+      1           0           0           0     void renderer.objects.sceneobject.SceneObject.emission(float)
+      1           0           0           0     pure nothrow @nogc @safe std.conv.toChars!(10, char, 1, long).toChars(long).Result std.conv.toChars!(10, char, 1, long).toChars(long)
+     12           0           0           0     pure nothrow @nogc @safe bool std.utf.canSearchInCodeUnits!(char).canSearchInCodeUnits(dchar)
+      1           0           0           0     pure nothrow @nogc @safe void std.conv.toChars!(10, char, 1, int).toChars(int).Result.initialize(int)
+      2           0           0           0     pure nothrow @nogc @safe uint std.array.appenderNewCapacity!(8u).appenderNewCapacity(uint, uint)
+      3           0           0           0     pure nothrow ref @nogc @safe gfm.math.vector.Vector!(float, 3).Vector gfm.math.vector.Vector!(float, 3).Vector.__ctor!(int, int, float).__ctor(int, int, float)
+      1           0           0           0     void renderer.objects.sceneobject.SceneObject.reflective(bool)
+     42           0           0           0     pure @safe bool std.exception.enforce!(bool).enforce(bool, lazy object.Throwable)
+      1           0           0           0     pure nothrow ref @nogc @safe gfm.math.vector.Vector!(float, 3).Vector gfm.math.vector.Vector!(float, 3).Vector.__ctor!(int, float, int).__ctor(int, float, int)
+      1           0           0           0     pure nothrow @nogc @safe immutable(char)[] app.start().__dgliteral1()
+      1           0           0           0     pure nothrow @nogc @safe immutable(char)[] app.enterLoop().__dgliteral1()
+      1           0           0           0     derelict.sdl2.sdl.DerelictSDL2Loader derelict.sdl2.sdl.DerelictSDL2Loader.__ctor()
+      1           0           0           0     pure nothrow ref @nogc @safe gfm.math.vector.Vector!(float, 3).Vector gfm.math.vector.Vector!(float, 3).Vector.__ctor!(int, float, float).__ctor(int, float, float)
+      5           0           0           0     pure nothrow ref @nogc @safe gfm.math.vector.Vector!(float, 3).Vector gfm.math.vector.Vector!(float, 3).Vector.__ctor!(float, float, float).__ctor(float, float, float)
+      1           0           0           0     pure nothrow @nogc @safe immutable(char)[] app.loadLibraries().__dgliteral1()
+      1           0           0           0     pure nothrow @trusted char[] std.array.array!(std.conv.toChars!(10, char, 1, int).toChars(int).Result).array(std.conv.toChars!(10, char, 1, int).toChars(int).Result).__lambda2()
+      1           0           0           0     pure nothrow @nogc @safe immutable(char)[] app.openWindow().__dgliteral1()
+      6           0           0           0     pure nothrow @nogc @safe uint std.array.appenderNewCapacity!(1u).appenderNewCapacity(uint, uint)
+      1           0           0           0     pure nothrow @nogc @safe immutable(char)[] app.openWindow().__dgliteral2()
+      2           0           0           0     pure nothrow @nogc @trusted immutable(char)[][] std.array.Appender!(immutable(char)[][]).Appender.put!(immutable(char)[]).put(immutable(char)[]).__lambda2()
+      8           0           0           0     void renderer.objects.sceneobject.SceneObject.color(gfm.math.vector.Vector!(float, 3).Vector)
+      1           0           0           0     pure nothrow @trusted char[] std.array.array!(std.conv.toChars!(10, char, 1, long).toChars(long).Result).array(std.conv.toChars!(10, char, 1, long).toChars(long).Result).__lambda2()
+      1           0           0           0     pure nothrow @nogc @trusted char[] std.array.array!(std.conv.toChars!(10, char, 1, int).toChars(int).Result).array(std.conv.toChars!(10, char, 1, int).toChars(int).Result).__lambda3()
+      2           0           0           0     pure nothrow @nogc @trusted std.conv.emplaceRef!(immutable(char)[], immutable(char)[], immutable(char)[]).emplaceRef(ref immutable(char)[], ref immutable(char)[]).S* std.conv.emplaceRef!(immutable(char)[], immutable(char)[], immutable(char)[]).emplaceRef(ref immutable(char)[], ref immutable(char)[]).__lambda5()
+      2           0           0           0     pure nothrow @nogc @safe ubyte std.utf.codeLength!(char).codeLength(dchar)
+      1           0           0           0     derelict.sdl2.ttf.DerelictSDL2ttfLoader derelict.sdl2.ttf.DerelictSDL2ttfLoader.__ctor()
+      2           3           0           0     pure @nogc @safe immutable(char)[] std.string.stripRight!(immutable(char)[]).stripRight(immutable(char)[])
+      2           0           0           0     pure nothrow ref @nogc @safe std.conv.emplaceRef!(immutable(char)[], immutable(char)[], immutable(char)[]).emplaceRef(ref immutable(char)[], ref immutable(char)[]).S std.conv.emplaceRef!(immutable(char)[], immutable(char)[], immutable(char)[]).emplaceRef(ref immutable(char)[], ref immutable(char)[]).S.__ctor(ref immutable(char)[])
+      6           0           0           0     inout pure nothrow @property @nogc @trusted immutable(char)[] std.array.Appender!(immutable(char)[]).Appender.data()
+      2           0           0           0     pure nothrow @nogc @safe void std.algorithm.iteration.splitter!("a == b", immutable(char)[], immutable(char)[]).splitter(immutable(char)[], immutable(char)[]).Result.popFront()
+      6           0           0           0     const pure nothrow @property @nogc @safe long core.time.Duration.total!("msecs").total()
+      1           0           0           0     pure @safe uint std.exception.enforce!(Exception, uint).enforce(uint, lazy const(char)[], immutable(char)[], uint)
+      1           0           0           0     derelict.sdl2.image.DerelictSDL2ImageLoader derelict.sdl2.image.DerelictSDL2ImageLoader.__ctor()
+      2           0           0           0     pure nothrow @nogc @safe void std.conv.emplaceRef!(immutable(char)[], immutable(char)[], immutable(char)[]).emplaceRef(ref immutable(char)[], ref immutable(char)[])
+      2           0           0           0     pure @trusted dchar std.utf.decode!(0, immutable(char)[]).decode(ref immutable(char)[], ref uint)
+      1           8           0           0     pure nothrow @safe immutable(char)[] std.conv.to!(immutable(char)[]).to!(long).to(long)
+      1           0           0           0     derelict.opengl3.gl.DerelictGLLoader derelict.opengl3.gl.DerelictGLLoader.__ctor()
+      2           0           0           0     derelict.opengl3.gl3.DerelictGL3Loader derelict.opengl3.gl3.DerelictGL3Loader.__ctor()
+      1           0           0           0     derelict.freeimage.freeimage.DerelictFILoader derelict.freeimage.freeimage.DerelictFILoader.__ctor()
+      1           0           0           0     renderer.scene.Scene renderer.scene.Scene.__ctor()
+      7           0           0           0     pure nothrow ref @nogc @safe std.conv.emplaceRef!(char, char, char).emplaceRef(ref char, ref char).S std.conv.emplaceRef!(char, char, char).emplaceRef(ref char, ref char).S.__ctor(ref char)
+      7           0           0           0     pure nothrow @nogc @trusted std.conv.emplaceRef!(char, char, char).emplaceRef(ref char, ref char).S* std.conv.emplaceRef!(char, char, char).emplaceRef(ref char, ref char).__lambda5()
+      1           6           0           0     pure nothrow @safe immutable(char)[] std.conv.to!(immutable(char)[]).to!(int).to(int)
+      8           0           0           0     derelict.util.loader.SharedLibLoader derelict.util.loader.SharedLibLoader.__ctor(immutable(char)[])
